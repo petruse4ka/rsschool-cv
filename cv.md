@@ -1,4 +1,4 @@
-!(Personal Photo of Konstantin Petrov)[/kp.jpg]
+!(Personal Photo of Konstantin Petrov)[rsschool-cv/kp.jpg]
 # Konstantin Petrov
 *Lead Project Manager*
 
@@ -20,3 +20,17 @@ Master's graduate in strategic management with extensive experience in project m
 * Moscow Gymnasium 45
     * International Baccalaureate programme
     * Graduation year: 2007
+
+## Work Experience
+* Lead Project Manager
+    * Company: Trust Media
+    * Location: the Netherlands
+    * Duration: 2016-Present
+* Head of Business Development
+    * Company: Completor
+    * Location: the Netherlands
+    * Duration: 2012-2016
+* Co-founder & Director
+    * Company: Atoko
+    * Location: the Netherlands
+    * Duration: 2011-2012
