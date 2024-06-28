@@ -1,4 +1,4 @@
-!(Personal Photo of Konstantin Petrov)[kp.jpg]
+!(Personal Photo of Konstantin Petrov)[/kp.jpg]
 # Konstantin Petrov
 *Lead Project Manager*
 
@@ -8,3 +8,15 @@ Master's graduate in strategic management with extensive experience in project m
 * LinkedIn: [https://www.linkedin.com/in/petrovkonstantin/](https://www.linkedin.com/in/petrovkonstantin/)
 * E-Mail: karlson8.9@hotmail.com
 * Telegram: [petruse4ka](https://t.me/petruse4ka)
+* Discord: petrusja#6082
+
+## Education
+* Tilburg University
+    * Masters in Strategic Management
+    * Graduation year: 2011
+* Tilburg University
+    * Bachelor in International Management
+    * Graduation year: 2010
+* Moscow Gymnasium 45
+    * International Baccalaureate programme
+    * Graduation year: 2007
