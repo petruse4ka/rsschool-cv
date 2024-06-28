@@ -66,7 +66,7 @@ selectedPhoto.onclick = function (evt) {
 };
 };
 ```
-# Finished Projects
+## Finished Projects
 * [Craft Beer website](https://github.com/petruse4ka/petruse4ka.github.io)
 * [Personal CV](https://github.com/petruse4ka/rsschool-cv)
 
