@@ -1,4 +1,4 @@
-!(Personal Photo of Konstantin Petrov)[https://github.com/[petruse4ka]/[rsschool-cv]/blob/[gh-pages]/image.jpg?raw=true/kp.jpg]
+!(Personal Photo of Konstantin Petrov)[https://github.com/[petruse4ka]/[rsschool-cv]/blob/[gh-pages]/kp.jpg?raw=true/]
 # Konstantin Petrov
 *Lead Project Manager*
 
@@ -40,3 +40,9 @@ Master's graduate in strategic management with extensive experience in project m
 * English - Fluent
 * Russian - Fluent
 * Dutch - Intermediary
+
+## Licences & Certifications
+* AWS Cloud Quest: Cloud Practitioner (May 2024)
+* AWS Well-Architected Proficient (May 2024)
+* Cantrill Tech Fundamentals (April 2024)
+* HTML Academy Beginners Corse (June 2023)
