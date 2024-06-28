@@ -1,3 +1,4 @@
+!(Personal Photo of Konstantin Petrov)[kp.jpg]
 # Konstantin Petrov
 *Lead Project Manager*
 
