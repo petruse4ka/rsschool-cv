@@ -1,4 +1,4 @@
-!(Personal Photo of Konstantin Petrov)[https://github.com/petruse4ka/rsschool-cv/blob/gh-pages/kp.jpg?raw=true/]
+![Personal Photo of Konstantin Petrov](https://github.com/petruse4ka/rsschool-cv/blob/gh-pages/kp.jpg)
 # Konstantin Petrov
 *Lead Project Manager*
 
@@ -49,35 +49,6 @@ fontButtonSerif.onclick = function () {
     document.body.classList.add('serif');
     fontButtonSansSerif.classList.remove('active');
     fontButtonSerif.classList.add('active');
-};
-
-/** Алгоритмы скрытия текста */
-
-let blogArticles = document.querySelectorAll('.blog-article');
-
-for (let blogArticle of blogArticles) {
-    let more = blogArticle.querySelector('.more');
-    more.onclick = function () {
-    blogArticle.classList.remove('short');
-}
-};
-
-/** Алгоритмы переключения раскладки в карточках с яхтами */
-
-let rent = document.querySelector('.cards');
-let buttonList = document.querySelector('.card-view-button-list');
-let buttonGrid = document.querySelector('.card-view-button-grid');
-
-buttonList.onclick = function () {
-    rent.classList.add('list');
-    buttonList.classList.add('active');
-    buttonGrid.classList.remove('active');
-};
-
-buttonGrid.onclick = function () {
-    rent.classList.remove('list');
-    buttonList.classList.remove('active');
-    buttonGrid.classList.add('active');
 };
 
 /** Алгоритмы переключения изображений в галлерее */
