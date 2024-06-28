@@ -19,7 +19,8 @@ Master's graduate in strategic management with extensive experience in project m
 * Git (basic)
 
 ## Code Example
-`/** Алгоритмы переключения стилей страницы */
+```
+/** Алгоритмы переключения стилей страницы */
 
 let themeButtonDark = document.querySelector('.theme-button-dark');
 let themeButtonLight = document.querySelector('.theme-button-light');
@@ -92,7 +93,8 @@ selectedPhoto.onclick = function (evt) {
     selectedPhoto.classList.add('active-item');
     activePreview.classList.remove('active-item');
 };
-};`
+};
+```
 
 ## Education
 * Tilburg University
