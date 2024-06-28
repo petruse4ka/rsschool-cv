@@ -96,9 +96,9 @@ selectedPhoto.onclick = function (evt) {
     * Duration: 2011-2012
 
 ## Languages
-* English - Fluent
-* Russian - Fluent
-* Dutch - Intermediary
+* English - *Fluent*
+* Russian - *Fluent*
+* Dutch - *Intermediary*
 
 ## Licences & Certifications
 * AWS Cloud Quest: Cloud Practitioner (May 2024)
