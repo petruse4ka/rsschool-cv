@@ -1,4 +1,4 @@
-!(Personal Photo of Konstantin Petrov)[rsschool-cv/kp.jpg]
+!(Personal Photo of Konstantin Petrov)[https://github.com/[petruse4ka]/[rsschool-cv]/blob/[gh-pages]/image.jpg?raw=true/kp.jpg]
 # Konstantin Petrov
 *Lead Project Manager*
 
@@ -9,6 +9,7 @@ Master's graduate in strategic management with extensive experience in project m
 * E-Mail: karlson8.9@hotmail.com
 * Telegram: [petruse4ka](https://t.me/petruse4ka)
 * Discord: petrusja#6082
+* Github: [petruse4ka](https://github.com/petruse4ka)
 
 ## Education
 * Tilburg University
@@ -34,3 +35,8 @@ Master's graduate in strategic management with extensive experience in project m
     * Company: Atoko
     * Location: the Netherlands
     * Duration: 2011-2012
+
+## Languages
+* English - Fluent
+* Russian - Fluent
+* Dutch - Intermediary
