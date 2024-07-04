@@ -1,1 +1,1 @@
-https://petruse4ka.github.io/rsschool-cv/cv
+https://petruse4ka.github.io/rsschool-cv/
