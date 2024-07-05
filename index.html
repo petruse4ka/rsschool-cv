@@ -3,10 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Personal CV of Konstantin Petrov. Personal project created as a part of JS/FE Pre-School 2024Q2">
+    <meta name="keywords" content="CV, Konstantin, Rolling-Scopes, Pre-School, project, HTML, CSS">
+    <meta name="author" content="Konstantin Petrov">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
     <title>CV Konstantin Petrov</title>
 </head>
 <body>
-    <p>Base template for CV</p>
+    <header class="header">
+        <nav class="main-menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a class="menu-link" href="#about">About</a></li>
+                <li class="menu-item"><a class="menu-link" href="#contacts">Contacts</a></li>
+                <li class="menu-item"><a class="menu-link" href="#edu">Education</a></li>
+                <li class="menu-item"><a class="menu-link" href="#skills">Skills</a></li>
+                <li class="menu-item"><a class="menu-link" href="#lang">Languages</a></li>
+                <li class="menu-item"><a class="menu-link" href="#achiev">Achievements</a></li>
+                <li class="menu-item"><a class="menu-link" href="#work">Work experience</a></li>
+                <li class="menu-item"><a class="menu-link" href="#projects">Projects</a></li>
+                <li class="menu-item"><a class="menu-link" href="#code-example">Code</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="about-me" id="about">
+            <div class="ava">  
+                <img class="avatar" src="/images/kp.jpg" alt="Photo of Konstantin Petrov" width="250" height="250">
+            </div>  
+            <div class="info">
+                <h1 class="page-title">Konstantin Petrov</h1>
+                <p>Master's graduate in strategic management with extensive experience in project management and business development. Throughout my career, I have honed my abilities in project management, overseeing diverse teams and delivering multiple projects to successful outcomes. </p>
+                <p>My strategic planning expertise and leadership approach have enabled me to navigate complex challenges with foresight and precision. I am passionate about driving results and thrive in fast-paced environments where strategic thinking and effective teamwork are paramount. </p>
+                <p>Currently, I am expanding my skill set by learning Front-End development to broaden my expertise and explore potential opportunities in the IT sector.</p>
+            </div>    
+        </section>
+
+        <div class="main-section">
+            <div class="left-side-main">
+
+                <section class="contacts" id="contacts">
+                    <h2>Contacts</h2>
+                    <ul class="contacts-list">
+                        <li class="contacts-item">
+                            <a class="contact-link" href="https://www.linkedin.com/in/petrovkonstantin/">petrovkonstantin</a>
+                            <p class="contact-source">LinkedIn</p>
+                        </li>
+                        <li class="contacts-item">
+                            <a class="contact-link" href="https://github.com/petruse4ka">petruse4ka</a>
+                            <p class="contact-source">Github</p>
+                        </li>
+                        <li class="contacts-item">
+                            <a class="contact-link" href="mailto:karlson8.9@hotmail.com">karlson8.9@hotmail.com</a>
+                            <p class="contact-source">E-Mail</p>
+                        </li>
+                        <li class="contacts-item">
+                            <p class="contact-id">petrusja#6082</p>
+                            <p class="contact-source">Discord</p>
+                        </li>
+                    </ul>    
+                </section>
+                
+                <section class="education" id="edu">
+                    <h2>Education</h2>
+                    <ul class="education-list">
+                        <li class="education-item">
+                            <p class="edu-course">MSc in Strategic Management</p>
+                            <p class="edu-details">Graduation: 2011</p>
+                            <p class="edu-details">University: Tilburg University</p>
+                            <p class="edu-details">Country: the Netherlands</p>
+                        </li>
+                        <li class="education-item">
+                            <p class="edu-course">BSc in International Management</p>
+                            <p class="edu-details">Graduation: 2010</p>
+                            <p class="edu-details">University: Tilburg University</p>
+                            <p class="edu-details">Country: the Netherlands</p>
+                        </li>
+                        <li class="education-item">
+                            <p class="edu-course">International Baccalaureate</p>
+                            <p class="edu-details">Graduation: 2007</p>
+                            <p class="edu-details">School: Moscow Gymnasium 45</p>
+                            <p class="edu-details">Country: Russia</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="skills" id="skills">
+                    <h2>Skills</h2>
+                    <ul class="skill-list">
+                        <li class="skills-item">
+                            <p class="skill">HTML</p>
+                            <p class="skill-lvl">Advanced</p>
+                        </li>
+                        <li class="skills-item">
+                            <p class="skill">CSS</p>
+                            <p class="skill-lvl">Advanced</p>
+                        </li>
+                        <li class="skills-item">
+                            <p class="skill">JS</p>
+                            <p class="skill-lvl">Basic</p>
+                        </li>
+                        <li class="skills-item">
+                            <p class="skill">React</p>
+                            <p class="skill-lvl">Basic</p>
+                        </li>
+                        <li class="skills-item">
+                            <p class="skill">Git</p>
+                            <p class="skill-lvl">Basic</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="lang" id="lang">
+                    <h2>Languages</h2>
+                    <ul class="lang-list">
+                        <li class="lang-item">
+                            <p class="language">English</p>
+                            <p class="lang-lvl">Fluent</p>
+                        </li>
+                        <li class="lang-item">
+                            <p class="language">Russian</p>
+                            <p class="lang-lvl">Fluent</p>
+                        </li>
+                        <li class="lang-item">
+                            <p class="language">Dutch</p>
+                            <p class="lang-lvl">Intermediary</p>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="achiev" id="achiev">
+                    <h2>Achievements</h2>
+                    <ul class="achiev-list">
+                        <li class="achiev-item">
+                            <p class="achievement">AWS Cloud Practitioner</p>
+                            <p class="achiev-date">May 2024</p>
+                        </li>
+                        <li class="achiev-item">
+                            <p class="achievement">AWS Well-Architected Proficient</p>
+                            <p class="achiev-date">May 2024</p>
+                        </li>
+                        <li class="achiev-item">
+                            <p class="achievement">Cantrill Tech Fundamentals</p>
+                            <p class="achiev-date">April 2024</p>
+                        </li>
+                        <li class="achiev-item">
+                            <p class="achievement">HTML Academy Beginners Corse</p>
+                            <p class="achiev-date">June 2023</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="right-side-main">
+                <section class="work" id="work">
+                    <h2>Work Experience</h2>
+                    <ul class="work-list">
+                        <li class="work-item">
+                            <p class="position">Lead Project Manager</p>
+                            <div class="position-flex">
+                                <p class="position-details">Company: Trust Media</p>
+                                <p class="position-details">Country: the Netherlands</p>
+                                <p class="position-details">Period: 2016-Present</p>
+                            </div>
+                            <ul class="position-duty-list">
+                                <li class="position-duty-item">Led a multidisciplinary team in the development and implementation of a payment platform for service providers, ensuring alignment with organizational goals and objectives.</li>
+                                <li class="position-duty-item">Managed project scope, timelines, and budgets effectively, resulting in the successful completion of milestones and deliverables within set deadlines and financial constraints.</li>
+                                <li class="position-duty-item">Coordinated cross-functional collaboration between engineering, product management, design, and quality assurance teams to drive project progress and resolve issues in a timely manner.</li>
+                                <li class="position-duty-item">Implemented agile methodologies to streamline project workflows, enhance communication, and foster a culture of continuous improvement.</li>
+                            </ul>
+                        </li>
+                        <li class="work-item">
+                            <p class="position">Head of Business Development</p>
+                            <div class="position-flex">
+                                <p class="position-details">Company: Completor</p>
+                                <p class="position-details">Country: the Netherlands</p>
+                                <p class="position-details">Period: 2012-2016</p>
+                            </div>
+                            <ul class="position-duty-list">
+                                <li class="position-duty-item">Led the team over the development of a fully customized in-house banking/accounting & CRM solution. </li>
+                                <li class="position-duty-item">Led the development of the pre-paid MasterCard cards project for corporate, individual, and anonymous clients. </li>
+                                <li class="position-duty-item">Was responsible for the full development cycle of an online company incorporation platform.</li>
+                                <li class="position-duty-item">Development of multi-purpose websites for various subsidiaries, partners as well as companies within the group. </li>
+                            </ul>
+                        </li>
+                        <li class="work-item">
+                            <p class="position">Co-founder & Director</p>
+                            <div class="position-flex">
+                                <p class="position-details">Company: Atoko</p>
+                                <p class="position-details">Country: the Netherlands</p>
+                                <p class="position-details">Period: 2011-2012</p>
+                            </div>
+                            <ul class="position-duty-list">
+                                <li class="position-duty-item">Developed and executed strategic plans to drive growth and profitability in the online retail segment, focusing on the sale of Asian groceries and specialty food products.</li>
+                                <li class="position-duty-item">Conducted market research and competitive analysis to identify growth opportunities, understand consumer preferences, and inform product selection and pricing strategies.</li>
+                                <li class="position-duty-item">Established partnerships with suppliers and distributors to ensure a diverse and high-quality product assortment, negotiating favorable terms and pricing to maximize profitability and competitiveness.</li>
+                                <li class="position-duty-item">Implemented data-driven decision-making processes and performance metrics to monitor business performance, identify trends, and optimize key performance indicators (KPIs) such as sales, margin, and customer acquisition.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="projects" id="projects">
+                    <h2>Projects</h2>
+                    <ul class="projects-list">
+                        <li class="projects-item">
+                            <figure>
+                                <a href="https://github.com/petruse4ka/yacht-club"><img class="project-img" src="/images/yacht-club.jpg" alt="Homepage image of the website for the Yacht club" width="300" height="210"></a>
+                                <figcaption class="projects-descr">Yacht club website (HTML, CSS, JS)</figcaption>
+                            </figure>
+                        </li>
+                        <li class="projects-item">
+                            <figure>
+                                <a href="https://github.com/petruse4ka/memory-game"><img class="project-img" src="/images/memory-game.png" alt="Image of the website with memory game" width="300" height="210"></a>
+                                <figcaption class="projects-descr">Memory Game (HTML, CSS, React)</figcaption>
+                            </figure>
+                        </li>
+                        <li class="projects-item">
+                            <figure>
+                                <a href="https://github.com/petruse4ka/petruse4ka.github.io"><img class="project-img" src="/images/kvast.png" alt="Homepage image of the website for Kvast Kvass shop" width="300" height="210"></a>
+                                <figcaption class="projects-descr">Kvass webshop (HTML, CSS)</figcaption>
+                            </figure>
+                        </li>
+                        <li class="projects-item">
+                            <figure>
+                                <a href="https://github.com/petruse4ka/great-keksby"><img class="project-img" src="/images/keksby.jpg" alt="Homepage image of the website for Keksby shop" width="300" height="210"></a>
+                                <figcaption class="projects-descr">Cats accesories webshop (HTML, CSS)</figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                <section class="code-example" id="code-example">
+                    <h2>Code Example</h2>
+                    <pre>
+                        <code>
+/** Алгоритмы переключения стилей страницы */
+
+let themeButtonDark = document.querySelector('.theme-button-dark');
+let themeButtonLight = document.querySelector('.theme-button-light');
+let fontButtonSansSerif = document.querySelector('.font-button-sans-serif');
+let fontButtonSerif = document.querySelector('.font-button-serif');
+
+themeButtonDark.onclick = function () {
+    document.body.classList.add('dark');
+    themeButtonDark.classList.add('active');
+    themeButtonLight.classList.remove('active');
+};
+
+themeButtonLight.onclick = function () {
+    document.body.classList.remove('dark');
+    themeButtonDark.classList.remove('active');
+    themeButtonLight.classList.add('active');
+};
+
+fontButtonSansSerif.onclick = function () {
+    document.body.classList.remove('serif');
+    fontButtonSansSerif.classList.add('active');
+    fontButtonSerif.classList.remove('active');
+};
+
+fontButtonSerif.onclick = function () {
+    document.body.classList.add('serif');
+    fontButtonSansSerif.classList.remove('active');
+    fontButtonSerif.classList.add('active');
+};
+                        </code>
+                    </pre>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">Copyright &copy; 2024 <a class="footer-link" href="https://github.com/petruse4ka">petruse4ka</a></p>
+        <div class="logo">
+            <a href="https://rs.school/courses/javascript-preschool-ru"><img src="/images/rs-school-logo.svg" alt="RS School Logo" width="100" height="50"></a>
+        </div>
+    </footer>
 </body>
 </html>
