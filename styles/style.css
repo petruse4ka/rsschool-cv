@@ -16,9 +16,12 @@ background-color: #212529;
   margin: 0;
   padding: 20px 0;
   background-color: #6f42c1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header__container {
@@ -27,16 +30,12 @@ background-color: #212529;
 
 .menu-list {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 45px;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.menu-item {
-  text-transform: uppercase;
 }
 
 .menu-link {
@@ -51,38 +50,58 @@ background-color: #212529;
 
 /* main */
 
-/*
-
- background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);}
-
- */
-
 .main {
-  padding: 100px 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-me {
-    display: flex;
-    padding: 45px 45px;
-    background-color: #abcef8;
+  width: 100%;
+  padding: 75px 0;
+  background-image: linear-gradient(180deg, rgba(33, 37, 41, 0.01), rgba(33, 37, 41, 1) 85%), radial-gradient(ellipse at top left, rgba(76, 11, 206, 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(214, 51, 132, 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(76, 11, 206, 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(214, 51, 132, 0.5), transparent 50%);
+  display: flex;
+  justify-content: center;
 }
 
-.ava {
-    width: 250px;
-    margin-right: 100px; 
+.about-me__container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.avatar {
-    border-radius: 50%;
+.photo {
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.photo:hover {
+  transform: scale(1.15) rotate(360deg);
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.personal-info__container {
+  padding: 15px 0;
+  max-width: 1000px;
 }
 
 .page-title {
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-    font-size: 44px;
-    line-height: 60px;
+  padding: 0;
+  margin: 0;
+  font-size: 4rem;
+  line-height: 6rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about-me__text {
+  color: #dddddd;
+  
 }
 
 .main-section {
