@@ -59,6 +59,7 @@ background-color: #212529;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .about-me {
@@ -123,40 +124,32 @@ h2 {
     background-color: #abcef8;
 }
 
-.contact-link {
-    color: #000000;
+.education, .skills, .lang, .achiev {
+  border-top: 1px solid #ffffff;
+  padding-left: 30px;
+  padding-bottom: 25px;
 }
 
-.contact-link:hover {
-    color: #917474
+.education-list, .skill-list, .lang-list, .achiev-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
-.contacts, .education, .skills, .lang, .achiev {
-    border-top: 1px solid #ffffff;
-    padding-left: 30px;
-    padding-bottom: 25px;
+.contact-id, .edu-course, .skill, .language, .achievement {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 10px;
 }
 
-.contacts-list, .education-list, .skill-list, .lang-list, .achiev-list {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+.edu-details, .skill-lvl, .lang-lvl, .achiev-date {
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
 }
 
-.contact-link, .contact-id, .edu-course, .skill, .language, .achievement {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 10px;
-}
-
-.contact-source, .edu-details, .skill-lvl, .lang-lvl, .achiev-date {
-    font-size: 12px;
-    font-style: italic;
-    line-height: 18px;
-}
-
-.contacts-item, .education-item, .skills-item, .lang-item, .achiev-item {
-    padding-bottom: 10px;
+.education-item, .skills-item, .lang-item, .achiev-item {
+  padding-bottom: 10px;
 }
 
 .right-side-main {
@@ -231,13 +224,83 @@ figure {
     padding-top: 10px;
 }
 
+.contacts {
+  width: 75%;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.contacts-title {
+  font-size: 3rem;
+  line-height: 4.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-item {
+  min-width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #6f42c1;
+  border-radius: 10px;
+  padding: 40px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-logo {
+  width: 96px;
+  height: auto;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contacts-item:hover {
+  border-color: #ff6ec7;
+}
+
+.contacts-item:hover .contact-logo {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.contact-link {
+  font-size: 1.2rem;
+  color: #1f51ff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+  color: #ff6ec7;
+}
+
+.contact-source {
+  font-size: 1rem;
+  margin: 20px 0 0;
+  color: #dddddd;
+}
+
 /* footer */
 
 .footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #6f42c1;
+  background-color: #2b3035;
   padding: 20px 0;
   margin: 0;
 }
@@ -259,12 +322,12 @@ figure {
 
 .footer-link {
     text-decoration: none;
-    color: #6ea8fe;
+    color: #1f51ff;
     transition: all 0.3s ease-in-out;
   }
   
   .footer-link:hover {
-    color: #ffffff;
+    color: #ff6ec7;
   }
 
 .logo {
