@@ -21,9 +21,6 @@
             <a class="menu-link" href="#about">About</a>
           </li>
           <li class="menu-item">
-            <a class="menu-link" href="#contacts">Contacts</a>
-          </li>
-          <li class="menu-item">
             <a class="menu-link" href="#edu">Education</a>
           </li>
           <li class="menu-item">
@@ -43,6 +40,9 @@
           </li>
           <li class="menu-item">
             <a class="menu-link" href="#code-example">Code</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -204,35 +204,7 @@
                     </ul>
                 </section>
 
-                <section class="projects" id="projects">
-                    <h2>Projects</h2>
-                    <ul class="projects-list">
-                        <li class="projects-item">
-                            <figure>
-                                <a href="https://github.com/petruse4ka/yacht-club"><img class="project-img" src="images/yacht-club.jpg" alt="Homepage image of the website for the Yacht club" width="300" height="210"></a>
-                                <figcaption class="projects-descr">Yacht club website (HTML, CSS, JS)</figcaption>
-                            </figure>
-                        </li>
-                        <li class="projects-item">
-                            <figure>
-                                <a href="https://github.com/petruse4ka/memory-game"><img class="project-img" src="images/memory-game.png" alt="Image of the website with memory game" width="300" height="210"></a>
-                                <figcaption class="projects-descr">Memory Game (HTML, CSS, React)</figcaption>
-                            </figure>
-                        </li>
-                        <li class="projects-item">
-                            <figure>
-                                <a href="https://github.com/petruse4ka/petruse4ka.github.io"><img class="project-img" src="images/kvast.png" alt="Homepage image of the website for Kvast Kvass shop" width="300" height="210"></a>
-                                <figcaption class="projects-descr">Kvass webshop (HTML, CSS)</figcaption>
-                            </figure>
-                        </li>
-                        <li class="projects-item">
-                            <figure>
-                                <a href="https://github.com/petruse4ka/great-keksby"><img class="project-img" src="images/keksby.jpg" alt="Homepage image of the website for Keksby shop" width="300" height="210"></a>
-                                <figcaption class="projects-descr">Cats accesories webshop (HTML, CSS)</figcaption>
-                            </figure>
-                        </li>
-                    </ul>
-                </section>
+
                 <section class="code-example" id="code-example">
                     <h2>Code Example</h2>
                     <pre>
@@ -275,6 +247,71 @@ fontButtonSerif.onclick = function () {
 
 
 
+
+        
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Projects</h2>
+      <div class="projects-slider">
+        <ul class="projects-list">
+          <li class="projects-item">
+            <a href="https://github.com/petruse4ka/yacht-club" target="_blank" class="project-link">
+            <div class="project-img__container">
+              <img class="project-img" src="images/projects/yacht.jpg" alt="Yacht club website preview" width="480" height="270">
+              <div class="project-details">
+                <h3 class="project-title">Yacht club</h3>
+                <p class="project-info">Type: Website</p>
+                <p class="project-info">Technologies: HTML, CSS, JS</p>
+                <p class="project-info">Duration: 10 days</p>
+              </div>
+            </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="https://github.com/petruse4ka/memory-game" target="_blank" class="project-link">
+            <div class="project-img__container">
+              <img class="project-img" src="images/projects/shelter.jpg" alt="Shelter website preview" width="480" height="270">
+              <div class="project-details">
+                <h3 class="project-title">Shelter</h3>
+                <p class="project-info">Type: Website</p>
+                <p class="project-info">Technologies: HTML, CSS, JS</p>
+                <p class="project-info">Duration: 14 days</p>
+              </div>
+            </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="https://github.com/petruse4ka/petruse4ka.github.io" target="_blank" class="project-link">
+            <div class="project-img__container">
+              <img class="project-img" src="images/projects/kvas.jpg" alt="Kvass website preview" width="480" height="270">
+              <div class="project-details">
+                <h3 class="project-title">Kvast Kvass</h3>
+                <p class="project-info">Type: Website</p>
+                <p class="project-info">Technologies: HTML, CSS</p>
+                <p class="project-info">Duration: 4 days</p>
+              </div>
+            </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="https://github.com/petruse4ka/great-keksby" target="_blank" class="project-link">
+            <div class="project-img__container">
+              <img class="project-img" src="images/projects/pirates.jpg" alt="Pirates game preview" width="480" height="270">
+              <div class="project-details">
+                <h3 class="project-title">Pirates of RS School</h3>
+                <p class="project-info">Type: Canvas game</p>
+                <p class="project-info">Technologies: HTML, CSS, JS</p>
+                <p class="project-info">Duration: 10 days</p>
+              </div>
+            </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="slider-controls">
+        <button class="scroll-left">←</button>
+        <button class="scroll-right">→</button>
+      </div>
+    </section>
     <section class="contacts" id="contacts">
       <h2 class="contacts-title">Contacts</h2>
       <ul class="contacts-list">
@@ -301,12 +338,13 @@ fontButtonSerif.onclick = function () {
       </ul>
     </section>
   </main>
-
   <footer class="footer">
     <div class="footer__container">
-      <p class="copyright">Copyright &copy; 2024 <a class="footer-link" href="https://github.com/petruse4ka">petruse4ka</a></p>
+      <p class="copyright">Copyright &copy; 2024 <a class="footer-link" href="https://github.com/petruse4ka" target="_blank">petruse4ka</a></p>
       <div class="logo">
-        <a href="https://rs.school/courses/javascript-preschool-ru"><img src="images/rs-school-logo.svg" alt="RS School Logo" width="100" height="50"></a>
+        <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank">
+          <img src="images/rs-school-logo.svg" alt="RS School Logo" width="100" height="50">
+        </a>
       </div>
     </div>
   </footer>
