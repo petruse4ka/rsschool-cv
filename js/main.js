@@ -1,14 +1,28 @@
-/* Slider buttons */
+/* Slider*/
 
 const slider = document.querySelector('.projects-list');
-const sliderItem = document.querySelector('.projects-item')
+const sliderItems = document.querySelectorAll('.projects-item');
 const scrollLeftButton = document.querySelector('.scroll-left');
 const scrollRightButton = document.querySelector('.scroll-right');
 
+let currentIndex = 0;
+let itemWidth = sliderItems[0].offsetWidth;
+
+function updateButtonStates() {
+  scrollLeftButton.classList.toggle('disabled', currentIndex === 0);
+  scrollRightButton.classList.toggle('disabled', currentIndex >= sliderItems.length - 2);
+}
+
 scrollLeftButton.addEventListener('click', () => {
-  slider.scrollLeft -= (1.5 * sliderItem.offsetWidth);
+  currentIndex--;
+  slider.scrollLeft -= itemWidth;
+  updateButtonStates();
 });
 
 scrollRightButton.addEventListener('click', () => {
-  slider.scrollLeft += (1.5 * sliderItem.offsetWidth);
+  currentIndex++;
+  slider.scrollLeft += itemWidth;
+  updateButtonStates();
 });
+
+updateButtonStates();
