@@ -1,4 +1,4 @@
-/* Slider*/
+/* Slider */
 
 const slider = document.querySelector('.projects-list');
 const sliderItems = document.querySelectorAll('.projects-item');
@@ -20,13 +20,13 @@ function updateButtonStates() {
 
 scrollLeftButton.addEventListener('click', () => {
   currentIndex--;
-  slider.scrollLeft = currentIndex * itemWidth;
+  slider.scrollLeft = currentIndex * (itemWidth);
   updateButtonStates();
 });
 
 scrollRightButton.addEventListener('click', () => {
   currentIndex++;
-  slider.scrollLeft = currentIndex * itemWidth;
+  slider.scrollLeft = currentIndex * (itemWidth);
   updateButtonStates();
 });
 
@@ -35,3 +35,14 @@ window.addEventListener('resize', () => {
 });
 
 updateButtonStates();
+
+/* Code Examples */
+
+const spoilers = document.querySelectorAll('.spoiler-title');
+
+spoilers.forEach(spoiler => {
+  spoiler.addEventListener('click', () => {
+    spoiler.classList.toggle('active');
+    spoiler.nextElementSibling.classList.toggle('active');
+  });
+});

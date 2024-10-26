@@ -63,6 +63,9 @@
       </div>  
     </section>
 
+
+    
+
         <div class="main-section">
             <div class="left-side-main">        
                 <section class="education" id="edu">
@@ -203,47 +206,8 @@
                         </li>
                     </ul>
                 </section>
-
-
-                <section class="code-example" id="code-example">
-                    <h2>Code Example</h2>
-                    <pre>
-                        <code>
-/** Алгоритмы переключения стилей страницы */
-
-let themeButtonDark = document.querySelector('.theme-button-dark');
-let themeButtonLight = document.querySelector('.theme-button-light');
-let fontButtonSansSerif = document.querySelector('.font-button-sans-serif');
-let fontButtonSerif = document.querySelector('.font-button-serif');
-
-themeButtonDark.onclick = function () {
-    document.body.classList.add('dark');
-    themeButtonDark.classList.add('active');
-    themeButtonLight.classList.remove('active');
-};
-
-themeButtonLight.onclick = function () {
-    document.body.classList.remove('dark');
-    themeButtonDark.classList.remove('active');
-    themeButtonLight.classList.add('active');
-};
-
-fontButtonSansSerif.onclick = function () {
-    document.body.classList.remove('serif');
-    fontButtonSansSerif.classList.add('active');
-    fontButtonSerif.classList.remove('active');
-};
-
-fontButtonSerif.onclick = function () {
-    document.body.classList.add('serif');
-    fontButtonSansSerif.classList.remove('active');
-    fontButtonSerif.classList.add('active');
-};
-                        </code>
-                    </pre>
-                </section>
+              </div>
             </div>
-        </div>
 
 
 
@@ -262,6 +226,32 @@ fontButtonSerif.onclick = function () {
                 <p class="project-info">Type: App</p>
                 <p class="project-info">Technologies: HTML, CSS, JS</p>
                 <p class="project-info">Duration: 7 days</p>
+              </div>
+            </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="https://petruse4ka.github.io/Shelter/" target="_blank" class="project-link">
+            <div class="project-img__container">
+              <img class="project-img" src="images/projects/shelter.jpg" alt="Shelter website preview" width="480" height="270">
+              <div class="project-details">
+                <h3 class="project-title">Shelter</h3>
+                <p class="project-info">Type: Website</p>
+                <p class="project-info">Technologies: HTML, CSS, JS</p>
+                <p class="project-info">Duration: 14 days</p>
+              </div>
+            </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="https://petruse4ka.github.io/Pirate-Game/" target="_blank" class="project-link">
+            <div class="project-img__container">
+              <img class="project-img" src="images/projects/pirates.jpg" alt="Pirates game preview" width="480" height="270">
+              <div class="project-details">
+                <h3 class="project-title">Pirates of RS School</h3>
+                <p class="project-info">Type: Canvas game</p>
+                <p class="project-info">Technologies: HTML, CSS, JS</p>
+                <p class="project-info">Duration: 10 days</p>
               </div>
             </div>
             </a>
@@ -293,14 +283,27 @@ fontButtonSerif.onclick = function () {
             </a>
           </li>
           <li class="projects-item">
-            <a href="https://petruse4ka.github.io/Shelter/" target="_blank" class="project-link">
+            <a href="https://petruse4ka.github.io/memory-game/" target="_blank" class="project-link">
             <div class="project-img__container">
-              <img class="project-img" src="images/projects/shelter.jpg" alt="Shelter website preview" width="480" height="270">
+              <img class="project-img" src="images/projects/memory.jpg" alt="Memory game preview" width="480" height="270">
               <div class="project-details">
-                <h3 class="project-title">Shelter</h3>
-                <p class="project-info">Type: Website</p>
+                <h3 class="project-title">Memory Game</h3>
+                <p class="project-info">Type: Js game</p>
+                <p class="project-info">Technologies: HTML, CSS, JS, React</p>
+                <p class="project-info">Duration: 12 days</p>
+              </div>
+            </div>
+            </a>
+          </li>
+          <li class="projects-item">
+            <a href="https://petruse4ka.github.io/Image-Gallery/" target="_blank" class="project-link">
+            <div class="project-img__container">
+              <img class="project-img" src="images/projects/gallery.jpg" alt="Image gallery preview" width="480" height="270">
+              <div class="project-details">
+                <h3 class="project-title">Image Gallery</h3>
+                <p class="project-info">Type: App</p>
                 <p class="project-info">Technologies: HTML, CSS, JS</p>
-                <p class="project-info">Duration: 14 days</p>
+                <p class="project-info">Duration: 7 days</p>
               </div>
             </div>
             </a>
@@ -318,51 +321,126 @@ fontButtonSerif.onclick = function () {
             </div>
             </a>
           </li>
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/Pirate-Game/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/pirates.jpg" alt="Pirates game preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Pirates of RS School</h3>
-                <p class="project-info">Type: Canvas game</p>
-                <p class="project-info">Technologies: HTML, CSS, JS</p>
-                <p class="project-info">Duration: 10 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/memory-game/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/memory.jpg" alt="Memory game preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Memory Game</h3>
-                <p class="project-info">Type: Js game</p>
-                <p class="project-info">Technologies: HTML, CSS, JS, React</p>
-                <p class="project-info">Duration: 12 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/Image-Gallery/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/galery.jpg" alt="Image gallery preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Image Gallery</h3>
-                <p class="project-info">Type: App</p>
-                <p class="project-info">Technologies: HTML, CSS, JS</p>
-                <p class="project-info">Duration: 7 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
         </ul>
       </div>
       <div class="slider-controls">
         <button class="scroll-left">←</button>
         <button class="scroll-right">→</button>
       </div>
+    </section>
+    <section class="code-example" id="code-example">
+      <h2 class="code-title">Code Examples</h2>
+      <ul class="code-list">
+        <li class="code-item">
+          <button class="spoiler-title active">
+            <div class="button-text">Return the time given the angle of the hour-hand</div>
+            <div class="button-icon__container">
+              <img class="button-icon" src="images/arrow.png">
+            </div>
+          </button>
+          <pre class="code-snippet active">
+            <code>
+var whatTimeIsIt = function(angle) {
+  const totalMinutes = Math.floor(angle * 2);
+  const hours = Math.floor(totalMinutes / 60) || 12;
+  const minutes = totalMinutes % 60;
+  const actualHour = String(hours).padStart(2, '0');
+  const actualMinute = String(minutes).padStart(2, '0');
+  const actualTime = `${actualHour}:${actualMinute}`;
+  return actualTime;
+}
+            </code>
+          </pre>
+        </li>
+        <li class="code-item">
+          <button class="spoiler-title">
+            <div class="button-text">Is a number prime?</div>
+            <div class="button-icon__container">
+              <img class="button-icon" src="images/arrow.png">
+            </div>            
+          </button>
+          <pre class="code-snippet">
+            <code>    
+function isPrime(num) {
+  if (num &lt;= 1) {
+    return false;
+  }
+  if (num === 3 || num === 2) {
+    return true;
+  }
+  if (num % 2 === 0 || num % 3 === 0) {
+    return false;
+  }
+  for (let i = 5; i * i &lt;= num; i += 6) {
+    if (num % i === 0 || num % (i + 2) === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+            </code>
+          </pre>
+        </li>
+        <li class="code-item">
+          <button class="spoiler-title">
+            <div class="button-text">Return the number of bits given integer as input</div>
+            <div class="button-icon__container">
+              <img class="button-icon" src="images/arrow.png">
+            </div>
+          </button>
+          <pre class="code-snippet">
+            <code>
+var countBits = function(n) {
+  let binary = n.toString(2)
+  let bits = binary.split('1')
+  return bits.length - 1;
+};
+            </code>
+          </pre>
+        </li>
+        <li class="code-item">
+          <button class="spoiler-title">
+            <div class="button-text">Split the string into pairs of two characters</div>
+            <div class="button-icon__container">
+              <img class="button-icon" src="images/arrow.png">
+            </div>
+          </button>
+          <pre class="code-snippet">
+            <code>
+function solution(str){
+  let word = str
+  let result = []
+  if ((str.length % 2) !== 0) {
+    word = word + '_'
+  }
+  for (let i = 0; i &lt; word.length; i += 2) {
+    result = result.concat(word.slice(i, (i + 2)));
+  }
+  return result;
+}
+            </code>
+          </pre>
+        </li>
+        <li class="code-item">
+          <button class="spoiler-title">
+            <div class="button-text">Reverse a stream of received data</div>
+            <div class="button-icon__container">
+              <img class="button-icon" src="images/arrow.png">
+            </div>
+          </button>
+          <pre class="code-snippet">
+            <code>
+function dataReverse(data) {
+  let result = [];
+  for (let i = data.length; i >= 0; i -= 8) {
+    result =  result.concat(data.slice((i - 8), i))
+  }
+  return result; 
+}
+            </code>
+          </pre>
+        </li>
+      </ul>
     </section>
     <section class="contacts" id="contacts">
       <h2 class="contacts-title">Contacts</h2>
