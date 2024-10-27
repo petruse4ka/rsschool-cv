@@ -64,7 +64,7 @@
     </section>
 
 
-    
+
 
         <div class="main-section">
             <div class="left-side-main">        
@@ -88,72 +88,6 @@
                             <p class="edu-details">Graduation: 2007</p>
                             <p class="edu-details">School: Moscow Gymnasium 45</p>
                             <p class="edu-details">Country: Russia</p>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="skills" id="skills">
-                    <h2>Skills</h2>
-                    <ul class="skill-list">
-                        <li class="skills-item">
-                            <p class="skill">HTML</p>
-                            <p class="skill-lvl">Advanced</p>
-                        </li>
-                        <li class="skills-item">
-                            <p class="skill">CSS</p>
-                            <p class="skill-lvl">Advanced</p>
-                        </li>
-                        <li class="skills-item">
-                            <p class="skill">JS</p>
-                            <p class="skill-lvl">Basic</p>
-                        </li>
-                        <li class="skills-item">
-                            <p class="skill">React</p>
-                            <p class="skill-lvl">Basic</p>
-                        </li>
-                        <li class="skills-item">
-                            <p class="skill">Git</p>
-                            <p class="skill-lvl">Basic</p>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="lang" id="lang">
-                    <h2>Languages</h2>
-                    <ul class="lang-list">
-                        <li class="lang-item">
-                            <p class="language">English</p>
-                            <p class="lang-lvl">Fluent</p>
-                        </li>
-                        <li class="lang-item">
-                            <p class="language">Russian</p>
-                            <p class="lang-lvl">Fluent</p>
-                        </li>
-                        <li class="lang-item">
-                            <p class="language">Dutch</p>
-                            <p class="lang-lvl">Intermediary</p>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="achiev" id="achiev">
-                    <h2>Achievements</h2>
-                    <ul class="achiev-list">
-                        <li class="achiev-item">
-                            <p class="achievement">AWS Cloud Practitioner</p>
-                            <p class="achiev-date">May 2024</p>
-                        </li>
-                        <li class="achiev-item">
-                            <p class="achievement">AWS Well-Architected Proficient</p>
-                            <p class="achiev-date">May 2024</p>
-                        </li>
-                        <li class="achiev-item">
-                            <p class="achievement">Cantrill Tech Fundamentals</p>
-                            <p class="achiev-date">April 2024</p>
-                        </li>
-                        <li class="achiev-item">
-                            <p class="achievement">HTML Academy Beginners Corse</p>
-                            <p class="achiev-date">June 2023</p>
                         </li>
                     </ul>
                 </section>
@@ -212,7 +146,6 @@
 
 
 
-        
     <section class="projects" id="projects">
       <h2 class="projects-title">Projects</h2>
       <div class="projects-slider">
@@ -339,16 +272,16 @@
             </div>
           </button>
           <pre class="code-snippet active">
-            <code>
-var whatTimeIsIt = function(angle) {
-  const totalMinutes = Math.floor(angle * 2);
-  const hours = Math.floor(totalMinutes / 60) || 12;
-  const minutes = totalMinutes % 60;
-  const actualHour = String(hours).padStart(2, '0');
-  const actualMinute = String(minutes).padStart(2, '0');
-  const actualTime = `${actualHour}:${actualMinute}`;
-  return actualTime;
-}
+            <code class="code">
+<span class="keyword">var</span> <span class="variable">whatTimeIsIt</span> <span class="operator">=</span> <span class="keyword">function</span><span class="parenthesis">(</span><span class="parameter">angle</span><span class="parenthesis">)</span> <span class="brace">{</span>
+  <span class="keyword">const</span> <span class="variable">totalMinutes</span> <span class="operator">=</span> <span class="function">Math.floor</span><span class="parenthesis">(</span><span class="parameter">angle</span> <span class="operator">*</span> <span class="number">2</span><span class="parenthesis">)</span><span class="semicolon">;</span>
+  <span class="keyword">const</span> <span class="variable">hours</span> <span class="operator">=</span> <span class="function">Math.floor</span><span class="parenthesis">(</span><span class="parameter">totalMinutes</span> <span class="operator">/</span> <span class="number">60</span><span class="parenthesis">)</span> <span class="operator">||</span> <span class="number">12</span><span class="semicolon">;</span>
+  <span class="keyword">const</span> <span class="variable">minutes</span> <span class="operator">=</span> <span class="parameter">totalMinutes</span> <span class="operator">%</span> <span class="number">60</span><span class="semicolon">;</span>
+  <span class="keyword">const</span> <span class="variable">actualHour</span> <span class="operator">=</span> <span class="function">String</span><span class="parenthesis">(</span><span class="parameter">hours</span><span class="parenthesis">)</span><span class="dot">.</span><span class="method">padStart</span><span class="parenthesis">(</span><span class="number">2</span><span class="comma">,</span> <span class="string">'0'</span><span class="parenthesis">)</span><span class="semicolon">;</span>
+  <span class="keyword">const</span> <span class="variable">actualMinute</span> <span class="operator">=</span> <span class="function">String</span><span class="parenthesis">(</span><span class="parameter">minutes</span><span class="parenthesis">)</span><span class="dot">.</span><span class="method">padStart</span><span class="parenthesis">(</span><span class="number">2</span><span class="comma">,</span> <span class="string">'0'</span><span class="parenthesis">)</span><span class="semicolon">;</span>
+  <span class="keyword">const</span> <span class="variable">actualTime</span> <span class="operator">=</span> <span class="string">`${actualHour}:${actualMinute}`</span><span class="semicolon">;</span>
+  <span class="keyword">return</span> <span class="variable">actualTime</span><span class="semicolon">;</span>
+<span class="brace">}</span>
             </code>
           </pre>
         </li>
@@ -360,24 +293,24 @@ var whatTimeIsIt = function(angle) {
             </div>            
           </button>
           <pre class="code-snippet">
-            <code>    
-function isPrime(num) {
-  if (num &lt;= 1) {
-    return false;
-  }
-  if (num === 3 || num === 2) {
-    return true;
-  }
-  if (num % 2 === 0 || num % 3 === 0) {
-    return false;
-  }
-  for (let i = 5; i * i &lt;= num; i += 6) {
-    if (num % i === 0 || num % (i + 2) === 0) {
-      return false;
-    }
-  }
-  return true;
-};
+            <code class="code">    
+<span class="keyword">function</span> <span class="variable">isPrime</span><span class="parenthesis">(</span><span class="parameter">num</span><span class="parenthesis">)</span> <span class="brace">{</span>
+  <span class="keyword">if</span> <span class="parenthesis">(</span><span class="parameter">num</span> <span class="operator">&lt;=</span> <span class="number">1</span><span class="parenthesis">)</span> <span class="brace">{</span>
+    <span class="keyword">return</span> <span class="variable">false</span><span class="semicolon">;</span>
+  <span class="brace">}</span>
+  <span class="keyword">if</span> <span class="parenthesis">(</span><span class="parameter">num</span> <span class="operator">===</span> <span class="number">3</span> <span class="operator">||</span> <span class="parameter">num</span> <span class="operator">===</span> <span class="number">2</span><span class="parenthesis">)</span> <span class="brace">{</span>
+    <span class="keyword">return</span> <span class="variable">true</span><span class="semicolon">;</span>
+  <span class="brace">}</span>
+  <span class="keyword">if</span> <span class="parenthesis">(</span><span class="parameter">num</span> <span class="operator">%</span> <span class="number">2</span> <span class="operator">===</span> <span class="number">0</span> <span class="operator">||</span> <span class="parameter">num</span> <span class="operator">%</span> <span class="number">3</span> <span class="operator">===</span> <span class="number">0</span><span class="parenthesis">)</span> <span class="brace">{</span>
+    <span class="keyword">return</span> <span class="variable">false</span><span class="semicolon">;</span>
+  <span class="brace">}</span>
+  <span class="keyword">for</span> <span class="parenthesis">(</span><span class="keyword">let</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">5</span><span class="semicolon">;</span> <span class="parameter">i</span> <span class="operator">*</span> <span class="parameter">i</span> <span class="operator">&lt;=</span> <span class="parameter">num</span><span class="semicolon">;</span> <span class="parameter">i</span> <span class="operator">+=</span> <span class="number">6</span><span class="parenthesis">)</span> <span class="brace">{</span>
+    <span class="keyword">if</span> <span class="parenthesis">(</span><span class="parameter">num</span> <span class="operator">%</span> <span class="parameter">i</span> <span class="operator">===</span> <span class="number">0</span> <span class="operator">||</span> <span class="parameter">num</span> <span class="operator">%</span> <span class="parenthesis">(</span><span class="parameter">i</span> <span class="operator">+</span> <span class="number">2</span><span class="parenthesis">)</span> <span class="operator">===</span> <span class="number">0</span><span class="parenthesis">)</span> <span class="brace">{</span>
+      <span class="keyword">return</span> <span class="variable">false</span><span class="semicolon">;</span>
+    <span class="brace">}</span>
+  <span class="brace">}</span>
+  <span class="keyword">return</span> <span class="variable">true</span><span class="semicolon">;</span>
+<span class="brace">}</span><span class="semicolon">;</span>
             </code>
           </pre>
         </li>
@@ -389,12 +322,12 @@ function isPrime(num) {
             </div>
           </button>
           <pre class="code-snippet">
-            <code>
-var countBits = function(n) {
-  let binary = n.toString(2)
-  let bits = binary.split('1')
-  return bits.length - 1;
-};
+            <code class="code">
+<span class="keyword">var</span> <span class="variable">countBits</span> <span class="operator">=</span> <span class="keyword">function</span><span class="parenthesis">(</span><span class="parameter">n</span><span class="parenthesis">)</span> <span class="brace">{</span>
+  <span class="keyword">let</span> <span class="variable">binary</span> <span class="operator">=</span> <span class="parameter">n</span><span class="dot">.</span><span class="method">toString</span><span class="parenthesis">(</span><span class="number">2</span><span class="parenthesis">)</span><span class="semicolon">;</span>
+  <span class="keyword">let</span> <span class="variable">bits</span> <span class="operator">=</span> <span class="variable">binary</span><span class="dot">.</span><span class="method">split</span><span class="parenthesis">(</span><span class="string">'1'</span><span class="parenthesis">)</span><span class="semicolon">;</span>
+  <span class="keyword">return</span> <span class="variable">bits</span><span class="dot">.</span><span class="property">length</span> <span class="operator">-</span> <span class="number">1</span><span class="semicolon">;</span>
+<span class="brace">}</span><span class="semicolon">;</span>
             </code>
           </pre>
         </li>
@@ -406,18 +339,18 @@ var countBits = function(n) {
             </div>
           </button>
           <pre class="code-snippet">
-            <code>
-function solution(str){
-  let word = str
-  let result = []
-  if ((str.length % 2) !== 0) {
-    word = word + '_'
-  }
-  for (let i = 0; i &lt; word.length; i += 2) {
-    result = result.concat(word.slice(i, (i + 2)));
-  }
-  return result;
-}
+            <code class="code">
+<span class="keyword">function</span> <span class="variable">solution</span><span class="parenthesis">(</span><span class="parameter">str</span><span class="parenthesis">)</span> <span class="brace">{</span>
+  <span class="keyword">let</span> <span class="variable">word</span> <span class="operator">=</span> <span class="parameter">str</span><span class="semicolon">;</span>
+  <span class="keyword">let</span> <span class="variable">result</span> <span class="operator">=</span> <span class="bracket">[</span><span class="bracket">]</span><span class="semicolon">;</span>
+  <span class="keyword">if</span> <span class="parenthesis">(</span><span class="parenthesis">(</span><span class="parameter">str</span><span class="dot">.</span><span class="property">length</span> <span class="operator">%</span> <span class="number">2</span><span class="parenthesis">)</span> <span class="operator">!==</span> <span class="number">0</span><span class="parenthesis">)</span> <span class="brace">{</span>
+    <span class="variable">word</span> <span class="operator">=</span> <span class="variable">word</span> <span class="operator">+</span> <span class="string">'_'</span><span class="semicolon">;</span>
+  <span class="brace">}</span>
+  <span class="keyword">for</span> <span class="parenthesis">(</span><span class="keyword">let</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span><span class="semicolon">;</span> <span class="variable">i</span> <span class="operator">&lt;</span> <span class="variable">word</span><span class="dot">.</span><span class="property">length</span><span class="semicolon">;</span> <span class="variable">i</span> <span class="operator">+=</span> <span class="number">2</span><span class="parenthesis">)</span> <span class="brace">{</span>
+    <span class="variable">result</span> <span class="operator">=</span> <span class="variable">result</span><span class="dot">.</span><span class="method">concat</span><span class="parenthesis">(</span><span class="variable">word</span><span class="dot">.</span><span class="method">slice</span><span class="parenthesis">(</span><span class="parameter">i</span><span class="comma">,</span> <span class="parenthesis">(</span><span class="variable">i</span> <span class="operator">+</span> <span class="number">2</span><span class="parenthesis">)</span><span class="parenthesis">)</span><span class="parenthesis">)</span><span class="semicolon">;</span>
+  <span class="brace">}</span>
+  <span class="keyword">return</span> <span class="variable">result</span><span class="semicolon">;</span>
+<span class="brace">}</span>
             </code>
           </pre>
         </li>
@@ -429,14 +362,14 @@ function solution(str){
             </div>
           </button>
           <pre class="code-snippet">
-            <code>
-function dataReverse(data) {
-  let result = [];
-  for (let i = data.length; i >= 0; i -= 8) {
-    result =  result.concat(data.slice((i - 8), i))
-  }
-  return result; 
-}
+            <code class="code">
+<span class="keyword">function</span> <span class="variable">dataReverse</span><span class="parenthesis">(</span><span class="parameter">data</span><span class="parenthesis">)</span> <span class="brace">{</span>
+  <span class="keyword">let</span> <span class="variable">result</span> <span class="operator">=</span> <span class="bracket">[</span><span class="bracket">]</span><span class="semicolon">;</span>
+  <span class="keyword">for</span> <span class="parenthesis">(</span><span class="keyword">let</span> <span class="variable">i</span> <span class="operator">=</span> <span class="variable">data</span><span class="dot">.</span><span class="property">length</span><span class="semicolon">;</span> <span class="variable">i</span> <span class="operator">&gt;=</span> <span class="number">0</span><span class="semicolon">;</span> <span class="variable">i</span> <span class="operator">-=</span> <span class="number">8</span><span class="parenthesis">)</span> <span class="brace">{</span>
+    <span class="variable">result</span> <span class="operator">=</span> <span class="variable">result</span><span class="dot">.</span><span class="method">concat</span><span class="parenthesis">(</span><span class="variable">data</span><span class="dot">.</span><span class="method">slice</span><span class="parenthesis">(</span><span class="parenthesis">(</span><span class="variable">i</span> <span class="operator">-</span> <span class="number">8</span><span class="parenthesis">)</span><span class="comma">,</span> <span class="variable">i</span><span class="parenthesis">)</span><span class="parenthesis">)</span><span class="semicolon">;</span>
+  <span class="brace">}</span>
+  <span class="keyword">return</span> <span class="variable">result</span><span class="semicolon">;</span>
+<span class="brace">}</span>
             </code>
           </pre>
         </li>
@@ -446,27 +379,43 @@ function dataReverse(data) {
       <h2 class="contacts-title">Contacts</h2>
       <ul class="contacts-list">
         <li class="contacts-item">
-          <img src="images/contacts/linkedin.png" alt="LinkedIn logo" class="contact-logo" width="96" height="96">
-          <a class="contact-link" href="https://www.linkedin.com/in/petrovkonstantin/" target="_blank">Konstantin Petrov</a>
-          <p class="contact-source">LinkedIn</p>
+          <a class="contact-card" href="https://www.linkedin.com/in/petrovkonstantin/" target="_blank">
+            <img src="images/contacts/linkedin.png" alt="LinkedIn logo" class="contact-logo" width="96" height="96">
+            <div class="contact-info">
+              <span class="contact-alias">Konstantin Petrov</span>
+              <p class="contact-source">LinkedIn</p>
+            </div>
+          </a>
         </li>
         <li class="contacts-item">
-          <img src="images/contacts/github.png" alt="GitHub logo" class="contact-logo" width="96" height="96">
-          <a class="contact-link" href="https://github.com/petruse4ka" target="_blank">Petruse4ka</a>
-          <p class="contact-source">Github</p>
+          <a class="contact-card" href="https://github.com/petruse4ka" target="_blank">
+            <img src="images/contacts/github.png" alt="GitHub logo" class="contact-logo" width="96" height="96">
+            <div class="contact-info">
+              <span class="contact-alias">Petruse4ka</span>
+              <p class="contact-source">Github</p>
+            </div>
+          </a>
         </li>
         <li class="contacts-item">
-          <img src="images/contacts/email.png" alt="Email logo" class="contact-logo" width="96" height="96">
-          <a class="contact-link" href="mailto:karlson8.9@hotmail.com">karlson8.9@hotmail.com</a>
-          <p class="contact-source">E-Mail</p>
+          <a class="contact-card" href="mailto:karlson8.9@hotmail.com">
+            <img src="images/contacts/email.png" alt="Email logo" class="contact-logo" width="96" height="96">
+            <div class="contact-info">
+              <span class="contact-alias">karlson8.9@hotmail.com</span>
+              <p class="contact-source">E-Mail</p>
+            </div>
+          </a>
         </li>
         <li class="contacts-item">
-          <img src="images/contacts/discord.png" alt="Discord logo" class="contact-logo" width="96" height="96">
-          <a class="contact-link" href="https://discordapp.com/users/448093026095595530" target="_blank">Petrusja#6082</a>
-          <p class="contact-source">Discord</p>
+          <a class="contact-card" href="https://discordapp.com/users/448093026095595530" target="_blank">
+            <img src="images/contacts/discord.png" alt="Discord logo" class="contact-logo" width="96" height="96">
+            <div class="contact-info">
+              <span class="contact-alias">Petrusja#6082</span>
+              <p class="contact-source">Discord</p>
+            </div>
+          </a>
         </li>
       </ul>
-    </section>
+  </section>
   </main>
   <footer class="footer">
     <div class="footer__container">

@@ -269,7 +269,6 @@ h2 {
   color: #dddddd;
   overflow: hidden;
   border-bottom: 2px solid #ff6ec7;
-  font-family: Consolas, 'Courier New', monospace;
   white-space: pre-wrap; 
   word-wrap: break-word;
   transition: all 0.3s ease-in-out;
@@ -279,6 +278,48 @@ h2 {
   max-height: 600px;
   opacity: 1;
   padding: 15px;
+}
+
+.code {
+  font-family: Consolas, 'Courier New', monospace;
+}
+
+.keyword {
+  color: #569cd6;
+  font-weight: bold;
+}
+
+.variable {
+  color: #9cdcfe;
+}
+
+.parameter {
+  color: #dcdcaa;
+}
+
+.function, 
+.method {
+  color: #c586c0;
+}
+
+.number {
+  color: #b5cea8;
+}
+
+.string {
+  color: #ce9178;
+}
+
+.operator, 
+.dot, 
+.comma, 
+.semicolon {
+  color: #d4d4d4;
+}
+
+.parenthesis, 
+.brace {
+  color: #d4d4d4;
 }
 
 .projects {
@@ -430,7 +471,7 @@ h2 {
   margin: 0;
 }
 
-.contacts-item {
+.contact-card {
   min-width: 200px;
   text-align: center;
   display: flex;
@@ -439,7 +480,12 @@ h2 {
   border: 2px solid #6f42c1;
   border-radius: 10px;
   padding: 40px 30px;
+  text-decoration: none;
   transition: all 0.3s ease-in-out;
+}
+
+.contacts-item:hover .contact-card {
+  border-color: #ff6ec7;
 }
 
 .contact-logo {
@@ -449,22 +495,18 @@ h2 {
   transition: all 0.3s ease-in-out;
 }
 
-.contacts-item:hover {
-  border-color: #ff6ec7;
-}
-
 .contacts-item:hover .contact-logo {
   transform: scale(1.2) rotate(360deg);
 }
 
-.contact-link {
+.contact-alias {
   font-size: 1.2rem;
   color: #1f51ff;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 
-.contact-link:hover {
+.contacts-item:hover .contact-alias {
   color: #ff6ec7;
 }
 
