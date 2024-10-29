@@ -78,7 +78,8 @@ background-color: #212529;
 }
 
 .photo {
-  width: 250px;
+  width: 350px;
+  height: auto;
   border-radius: 50%;
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease-in-out;
@@ -193,6 +194,70 @@ h2 {
     margin-bottom: 40px;
     padding: 0;
 }
+
+
+
+
+
+
+
+.skills-lang-achievements {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.skills-lang {
+  width: 50%;
+}
+
+.achievements_container {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+
+.skill-list,
+.language-list,
+.achievements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-item,
+.language-item,
+.achievements-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #343a40;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.skills-item:hover,
+.language-item:hover,
+.achievement-item:hover {
+  transform: translateY(-3px);
+}
+
+.stars {
+  color: gold;
+}
+
+.flag-icon {
+  width: 20px;
+  height: auto;
+  margin-left: 10px;
+}
+
+
+
+
+
 
 
 
@@ -453,7 +518,10 @@ h2 {
 
 .projects-title,
 .contacts-title,
-.code-title {
+.code-title,
+.skills-title,
+.languages-title,
+.achievements-title {
   font-size: 3rem;
   line-height: 4.5rem;
   color: #ffffff;
@@ -523,22 +591,20 @@ h2 {
   display: flex;
   justify-content: center;
   background-color: #2b3035;
-  padding: 20px 0;
+  padding: 40px 0;
   margin: 0;
 }
 
 .footer__container {
   width: 75%; 
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
   align-items: center;
 }
 
 .copyright {
   margin: 0;
   padding: 0;
-  margin-right: 45px;
   color: #dddddd;
 }
 
@@ -551,7 +617,3 @@ h2 {
   .footer-link:hover {
     color: #ff6ec7;
   }
-
-.logo {
-  margin-left: 45px;
-}
