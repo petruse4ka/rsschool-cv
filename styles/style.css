@@ -195,75 +195,189 @@ h2 {
     padding: 0;
 }
 
-
-
-
-
-
-
 .skills-lang-achievements {
   width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.skills__container,
+.lang__container,
+.achievements__container {
+  background: #2b3035;
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  border: 2px solid #6f42c1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease;
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.skills-lang {
-  width: 50%;
+.skills__container:hover,
+.lang__container:hover,
+.achievements__container:hover {
+  border-color: #ff6ec7;
 }
 
-.achievements_container {
-  width: 50%;
-  padding: 20px;
-  position: relative;
+.skills-title,
+.languages-title,
+.achievements-title {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #6f42c1, #ff6ec7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .skill-list,
 .language-list,
 .achievements-list {
-  list-style: none;
+  width: 100%;
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .skills-item,
 .language-item,
 .achievements-item {
+  width: 100%;
+  background: linear-gradient(145deg, #343a40, #3e444a);
+  border-radius: 8px;
+  padding: 15px 20px;
   margin-bottom: 15px;
-  padding: 10px;
-  background-color: #343a40;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.skills-item::before,
+.language-item::before,
+.achievements-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.skills-item:hover::before,
+.language-item:hover::before,
+.achievements-item:hover::before {
+  left: 100%;
 }
 
 .skills-item:hover,
 .language-item:hover,
-.achievement-item:hover {
+.achievements-item:hover {
   transform: translateY(-3px);
+  background: linear-gradient(145deg, #3e444a, #454c53);
+  border-color: rgba(111, 66, 193, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.skill-text {
+  flex-grow: 1;
+}
+
+.skill-icon,
+.flag-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.skill,
+.language,
+.achievement {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.skill-lvl,
+.lang-lvl,
+.achievement-date {
+  color: #adb5bd;
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .stars {
-  color: gold;
+  color: #ffd700;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-left: auto;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+  transition: all 0.3s ease;
 }
 
-.flag-icon {
-  width: 20px;
-  height: auto;
-  margin-left: 10px;
+.skills-item:hover .stars {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
 
+.proficiency-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(73, 80, 87, 0.5);
+  border-radius: 3px;
+  overflow: hidden;
+}
 
+.proficiency-level {
+  height: 100%;
+  background: linear-gradient(90deg, #6f42c1, #ff6ec7);
+  border-radius: 3px;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(111, 66, 193, 0.3);
+}
 
+.language-item:hover .proficiency-level {
+  background: linear-gradient(90deg, #8250d5, #ff8ed4);
+  box-shadow: 0 0 15px rgba(111, 66, 193, 0.5);
+}
 
+.achievements-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-
-
-
-
-
-
+.achievement-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
 
 .code-example {
   width: 75%;
@@ -617,3 +731,15 @@ h2 {
   .footer-link:hover {
     color: #ff6ec7;
   }
+
+.language-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.language-text {
+  flex-grow: 1;
+}

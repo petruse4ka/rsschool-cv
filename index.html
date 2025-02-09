@@ -1,359 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal CV of Konstantin Petrov – a skilled professional with experience in web development and project management. View my work, skills, and contact information.">
-  <meta name="keywords" content="Konstantin Petrov, CV, resume, web-developer, project manager, js, html, css, agile, lean, portfolio, work experience, professional skills, contact">    
-  <meta name="author" content="Konstantin Petrov">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&family=Mulish:wght@400;500;700&family=Work+Sans:wght@400;500;700&family=Nunito:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>Konstantin Petrov Curriculum Vitae</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header__container">
-      <nav class="main-menu">
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a class="menu-link" href="#about">About</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#work">Work experience</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#edu">Education</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#skills">Skills</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#lang">Languages</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#achiev">Achievements</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#projects">Projects</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#code-example">Code</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#contacts">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="main">
-    <section class="about-me" id="about">
-      <div class="about-me__container">
-        <div class="photo__container">  
-          <img class="photo" src="images/personal-photo.jpg" alt="Photo of Konstantin Petrov" width="250" height="250">
-        </div>  
-        <div class="personal-info__container">
-          <h1 class="page-title">Konstantin Petrov</h1>
-          <p class="about-me__text">Master's graduate in strategic management with extensive experience in project management and business development. Throughout my career, I have honed my abilities in project management, overseeing diverse teams and delivering multiple projects to successful outcomes. </p>
-          <p class="about-me__text">My strategic planning expertise and leadership approach have enabled me to navigate complex challenges with foresight and precision. I am passionate about driving results and thrive in fast-paced environments where strategic thinking and effective teamwork are paramount. </p>
-          <p class="about-me__text">Currently, I am expanding my skill set by learning Front-End development to broaden my expertise and explore potential opportunities in the IT sector.</p>
-        </div>  
-      </div>  
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal CV of Konstantin Petrov – a skilled professional with experience in web development and project management. View my work, skills, and contact information."
+    />
+    <meta
+      name="keywords"
+      content="Konstantin Petrov, CV, resume, web-developer, project manager, js, html, css, agile, lean, portfolio, work experience, professional skills, contact"
+    />
+    <meta name="author" content="Konstantin Petrov" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicons/favicon-16x16.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Inter:wght@400;500;700&family=Poppins:wght@400;500;700&family=Mulish:wght@400;500;700&family=Work+Sans:wght@400;500;700&family=Nunito:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Konstantin Petrov Curriculum Vitae</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="main-menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="#about">About</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#work">Work experience</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#edu">Education</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#skills">Skills</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#lang">Languages</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#achiev">Achievements</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#projects">Projects</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#code-example">Code</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="about-me" id="about">
+        <div class="about-me__container">
+          <div class="photo__container">
+            <img
+              class="photo"
+              src="images/personal-photo.jpg"
+              alt="Photo of Konstantin Petrov"
+              width="250"
+              height="250"
+            />
+          </div>
+          <div class="personal-info__container">
+            <h1 class="page-title">Konstantin Petrov</h1>
+            <p class="about-me__text">
+              Master's graduate in strategic management with extensive
+              experience in project management and business development.
+              Throughout my career, I have honed my abilities in project
+              management, overseeing diverse teams and delivering multiple
+              projects to successful outcomes.
+            </p>
+            <p class="about-me__text">
+              My strategic planning expertise and leadership approach have
+              enabled me to navigate complex challenges with foresight and
+              precision. I am passionate about driving results and thrive in
+              fast-paced environments where strategic thinking and effective
+              teamwork are paramount.
+            </p>
+            <p class="about-me__text">
+              Currently, I am expanding my skill set by learning Front-End
+              development to broaden my expertise and explore potential
+              opportunities in the IT sector.
+            </p>
+          </div>
+        </div>
+      </section>
 
-
-
-
-        <div class="main-section">
-            <div class="left-side-main">        
-                <section class="education" id="edu">
-                    <h2>Education</h2>
-                    <ul class="education-list">
-                        <li class="education-item">
-                            <p class="edu-course">MSc in Strategic Management</p>
-                            <p class="edu-details">Graduation: 2011</p>
-                            <p class="edu-details">University: Tilburg University</p>
-                            <p class="edu-details">Country: the Netherlands</p>
-                        </li>
-                        <li class="education-item">
-                            <p class="edu-course">BSc in International Management</p>
-                            <p class="edu-details">Graduation: 2010</p>
-                            <p class="edu-details">University: Tilburg University</p>
-                            <p class="edu-details">Country: the Netherlands</p>
-                        </li>
-                        <li class="education-item">
-                            <p class="edu-course">International Baccalaureate</p>
-                            <p class="edu-details">Graduation: 2007</p>
-                            <p class="edu-details">School: Moscow Gymnasium 45</p>
-                            <p class="edu-details">Country: Russia</p>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-            <div class="right-side-main">
-                <section class="work" id="work">
-                    <h2>Work Experience</h2>
-                    <ul class="work-list">
-                        <li class="work-item">
-                            <p class="position">Lead Project Manager</p>
-                            <div class="position-flex">
-                                <p class="position-details">Company: Trust Media</p>
-                                <p class="position-details">Country: the Netherlands</p>
-                                <p class="position-details">Period: 2016-Present</p>
-                            </div>
-                            <ul class="position-duty-list">
-                                <li class="position-duty-item">Led a multidisciplinary team in the development and implementation of a payment platform for service providers, ensuring alignment with organizational goals and objectives.</li>
-                                <li class="position-duty-item">Managed project scope, timelines, and budgets effectively, resulting in the successful completion of milestones and deliverables within set deadlines and financial constraints.</li>
-                                <li class="position-duty-item">Coordinated cross-functional collaboration between engineering, product management, design, and quality assurance teams to drive project progress and resolve issues in a timely manner.</li>
-                                <li class="position-duty-item">Implemented agile methodologies to streamline project workflows, enhance communication, and foster a culture of continuous improvement.</li>
-                            </ul>
-                        </li>
-                        <li class="work-item">
-                            <p class="position">Head of Business Development</p>
-                            <div class="position-flex">
-                                <p class="position-details">Company: Completor</p>
-                                <p class="position-details">Country: the Netherlands</p>
-                                <p class="position-details">Period: 2012-2016</p>
-                            </div>
-                            <ul class="position-duty-list">
-                                <li class="position-duty-item">Led the team over the development of a fully customized in-house banking/accounting & CRM solution. </li>
-                                <li class="position-duty-item">Led the development of the pre-paid MasterCard cards project for corporate, individual, and anonymous clients. </li>
-                                <li class="position-duty-item">Was responsible for the full development cycle of an online company incorporation platform.</li>
-                                <li class="position-duty-item">Development of multi-purpose websites for various subsidiaries, partners as well as companies within the group. </li>
-                            </ul>
-                        </li>
-                        <li class="work-item">
-                            <p class="position">Co-founder & Director</p>
-                            <div class="position-flex">
-                                <p class="position-details">Company: Atoko</p>
-                                <p class="position-details">Country: the Netherlands</p>
-                                <p class="position-details">Period: 2011-2012</p>
-                            </div>
-                            <ul class="position-duty-list">
-                                <li class="position-duty-item">Developed and executed strategic plans to drive growth and profitability in the online retail segment, focusing on the sale of Asian groceries and specialty food products.</li>
-                                <li class="position-duty-item">Conducted market research and competitive analysis to identify growth opportunities, understand consumer preferences, and inform product selection and pricing strategies.</li>
-                                <li class="position-duty-item">Established partnerships with suppliers and distributors to ensure a diverse and high-quality product assortment, negotiating favorable terms and pricing to maximize profitability and competitiveness.</li>
-                                <li class="position-duty-item">Implemented data-driven decision-making processes and performance metrics to monitor business performance, identify trends, and optimize key performance indicators (KPIs) such as sales, margin, and customer acquisition.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-              </div>
-            </div>
-
-
-
-
-            <section class="skills-lang-achievements">
-              <div class="skills-lang">
-                <div class="skills__container">
-                  <h2 class="skills-title">Skills</h2>
-                  <ul class="skill-list">
-                    <li class="skills-item">
-                      <p class="skill">HTML</p>
-                      <p class="skill-lvl">Advanced</p>
-                      <div class="stars">★★★★★</div>
-                    </li>
-                    <li class="skills-item">
-                      <p class="skill">CSS</p>
-                      <p class="skill-lvl">Advanced</p>
-                      <div class="stars">★★★★★</div>
-                    </li>
-                    <li class="skills-item">
-                      <p class="skill">JS</p>
-                      <p class="skill-lvl">Basic</p>
-                      <div class="stars">★★★☆☆</div>
-                    </li>
-                    <li class="skills-item">
-                      <p class="skill">React</p>
-                      <p class="skill-lvl">Basic</p>
-                      <div class="stars">★★★☆☆</div>
-                    </li>
-                    <li class="skills-item">
-                      <p class="skill">Git</p>
-                      <p class="skill-lvl">Basic</p>
-                      <div class="stars">★★☆☆☆</div>
-                    </li>
-                  </ul>
+      <div class="main-section">
+        <div class="left-side-main">
+          <section class="education" id="edu">
+            <h2>Education</h2>
+            <ul class="education-list">
+              <li class="education-item">
+                <p class="edu-course">MSc in Strategic Management</p>
+                <p class="edu-details">Graduation: 2011</p>
+                <p class="edu-details">University: Tilburg University</p>
+                <p class="edu-details">Country: the Netherlands</p>
+              </li>
+              <li class="education-item">
+                <p class="edu-course">BSc in International Management</p>
+                <p class="edu-details">Graduation: 2010</p>
+                <p class="edu-details">University: Tilburg University</p>
+                <p class="edu-details">Country: the Netherlands</p>
+              </li>
+              <li class="education-item">
+                <p class="edu-course">International Baccalaureate</p>
+                <p class="edu-details">Graduation: 2007</p>
+                <p class="edu-details">School: Moscow Gymnasium 45</p>
+                <p class="edu-details">Country: Russia</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="right-side-main">
+          <section class="work" id="work">
+            <h2>Work Experience</h2>
+            <ul class="work-list">
+              <li class="work-item">
+                <p class="position">Lead Project Manager</p>
+                <div class="position-flex">
+                  <p class="position-details">Company: Trust Media</p>
+                  <p class="position-details">Country: the Netherlands</p>
+                  <p class="position-details">Period: 2016-Present</p>
                 </div>
-            
-                <div class="lang__container">
-                  <h2 class="languages-title">Languages</h2>
-                  <ul class="language-list">
-                    <li class="language">
-                      <img src="path/to/english-flag.png" alt="English Flag" class="flag-icon" width="25px" height="25px">
-                      <p class="language">English</p>
-                      <p class="lang-lvl">Fluent</p>
-                    </li>
-                    <li class="language">
-                      <img src="path/to/russian-flag.png" alt="Russian Flag" class="flag-icon" width="25px" height="25px">
-                      <p class="language">Russian</p>
-                      <p class="lang-lvl">Fluent</p>
-                    </li>
-                    <li class="language">
-                      <img src="path/to/dutch-flag.png" alt="Dutch Flag" class="flag-icon" width="25px" height="25px">
-                      <p class="language">Dutch</p>
-                      <p class="lang-lvl">Intermediary</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            
-              <div class="achievements__сontainer">
-                <h2 class="achievements-title">Achievements</h2>
-                <ul class="achievements-list">
-                  <li class="achievements-item">
-                    <p class="achievement">AWS Cloud Practitioner</p>
-                    <p class="achievment-date">May 2024</p>
+                <ul class="position-duty-list">
+                  <li class="position-duty-item">
+                    Led a multidisciplinary team in the development and
+                    implementation of a payment platform for service providers,
+                    ensuring alignment with organizational goals and objectives.
                   </li>
-                  <li class="achievements-item">
-                    <p class="achievement">AWS Well-Architected Proficient</p>
-                    <p class="achievment-date">May 2024</p>
+                  <li class="position-duty-item">
+                    Managed project scope, timelines, and budgets effectively,
+                    resulting in the successful completion of milestones and
+                    deliverables within set deadlines and financial constraints.
                   </li>
-                  <li class="achievements-item">
-                    <p class="achievement">Cantrill Tech Fundamentals</p>
-                    <p class="achievment-date">April 2024</p>
+                  <li class="position-duty-item">
+                    Coordinated cross-functional collaboration between
+                    engineering, product management, design, and quality
+                    assurance teams to drive project progress and resolve issues
+                    in a timely manner.
                   </li>
-                  <li class="achievements-item">
-                    <p class="achievement">HTML Academy Beginners Course</p>
-                    <p class="achievment-date">June 2023</p>
+                  <li class="position-duty-item">
+                    Implemented agile methodologies to streamline project
+                    workflows, enhance communication, and foster a culture of
+                    continuous improvement.
                   </li>
                 </ul>
-              </div>
-            </section>
-
-
-
-
-        
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Projects</h2>
-      <div class="projects-slider">
-        <ul class="projects-list">
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/JS-Audio-Player/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/audio.jpg" alt="Audio player preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Audio Player</h3>
-                <p class="project-info">Type: App</p>
-                <p class="project-info">Technologies: HTML, CSS, JS</p>
-                <p class="project-info">Duration: 7 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/Shelter/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/shelter.jpg" alt="Shelter website preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Shelter</h3>
-                <p class="project-info">Type: Website</p>
-                <p class="project-info">Technologies: HTML, CSS, JS</p>
-                <p class="project-info">Duration: 14 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/Pirate-Game/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/pirates.jpg" alt="Pirates game preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Pirates of RS School</h3>
-                <p class="project-info">Type: Canvas game</p>
-                <p class="project-info">Technologies: HTML, CSS, JS</p>
-                <p class="project-info">Duration: 10 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/great-keksby/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/keksby.jpg" alt="Keksby website preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Keksby Shop</h3>
-                <p class="project-info">Type: Website</p>
-                <p class="project-info">Technologies: HTML, CSS</p>
-                <p class="project-info">Duration: 4 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/yacht-club/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/yacht.jpg" alt="Yacht club website preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Yacht club</h3>
-                <p class="project-info">Type: Website</p>
-                <p class="project-info">Technologies: HTML, CSS, JS</p>
-                <p class="project-info">Duration: 10 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/memory-game/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/memory.jpg" alt="Memory game preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Memory Game</h3>
-                <p class="project-info">Type: Js game</p>
-                <p class="project-info">Technologies: HTML, CSS, JS, React</p>
-                <p class="project-info">Duration: 12 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/Image-Gallery/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/gallery.jpg" alt="Image gallery preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Image Gallery</h3>
-                <p class="project-info">Type: App</p>
-                <p class="project-info">Technologies: HTML, CSS, JS</p>
-                <p class="project-info">Duration: 7 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
-          <li class="projects-item">
-            <a href="https://petruse4ka.github.io/" target="_blank" class="project-link">
-            <div class="project-img__container">
-              <img class="project-img" src="images/projects/kvas.jpg" alt="Kvass website preview" width="480" height="270">
-              <div class="project-details">
-                <h3 class="project-title">Kvast Kvass</h3>
-                <p class="project-info">Type: Website</p>
-                <p class="project-info">Technologies: HTML, CSS</p>
-                <p class="project-info">Duration: 4 days</p>
-              </div>
-            </div>
-            </a>
-          </li>
-        </ul>
+              </li>
+              <li class="work-item">
+                <p class="position">Head of Business Development</p>
+                <div class="position-flex">
+                  <p class="position-details">Company: Completor</p>
+                  <p class="position-details">Country: the Netherlands</p>
+                  <p class="position-details">Period: 2012-2016</p>
+                </div>
+                <ul class="position-duty-list">
+                  <li class="position-duty-item">
+                    Led the team over the development of a fully customized
+                    in-house banking/accounting & CRM solution.
+                  </li>
+                  <li class="position-duty-item">
+                    Led the development of the pre-paid MasterCard cards project
+                    for corporate, individual, and anonymous clients.
+                  </li>
+                  <li class="position-duty-item">
+                    Was responsible for the full development cycle of an online
+                    company incorporation platform.
+                  </li>
+                  <li class="position-duty-item">
+                    Development of multi-purpose websites for various
+                    subsidiaries, partners as well as companies within the
+                    group.
+                  </li>
+                </ul>
+              </li>
+              <li class="work-item">
+                <p class="position">Co-founder & Director</p>
+                <div class="position-flex">
+                  <p class="position-details">Company: Atoko</p>
+                  <p class="position-details">Country: the Netherlands</p>
+                  <p class="position-details">Period: 2011-2012</p>
+                </div>
+                <ul class="position-duty-list">
+                  <li class="position-duty-item">
+                    Developed and executed strategic plans to drive growth and
+                    profitability in the online retail segment, focusing on the
+                    sale of Asian groceries and specialty food products.
+                  </li>
+                  <li class="position-duty-item">
+                    Conducted market research and competitive analysis to
+                    identify growth opportunities, understand consumer
+                    preferences, and inform product selection and pricing
+                    strategies.
+                  </li>
+                  <li class="position-duty-item">
+                    Established partnerships with suppliers and distributors to
+                    ensure a diverse and high-quality product assortment,
+                    negotiating favorable terms and pricing to maximize
+                    profitability and competitiveness.
+                  </li>
+                  <li class="position-duty-item">
+                    Implemented data-driven decision-making processes and
+                    performance metrics to monitor business performance,
+                    identify trends, and optimize key performance indicators
+                    (KPIs) such as sales, margin, and customer acquisition.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
-      <div class="slider-controls">
-        <button class="scroll-left">←</button>
-        <button class="scroll-right">→</button>
-      </div>
-    </section>
-    <section class="code-example" id="code-example">
-      <h2 class="code-title">Code Examples</h2>
-      <ul class="code-list">
-        <li class="code-item">
-          <button class="spoiler-title active">
-            <div class="button-text">Return the time given the angle of the hour-hand</div>
-            <div class="button-icon__container">
-              <img class="button-icon" src="images/arrow.png">
-            </div>
-          </button>
-          <pre class="code-snippet active">
+
+      <section class="skills-lang-achievements">
+        <div class="skills__container">
+          <h2 class="skills-title">Skills</h2>
+          <ul class="skill-list">
+            <li class="skills-item">
+              <div class="skill-info">
+                <img
+                  src="images/skills/html.png"
+                  alt="HTML icon"
+                  class="skill-icon"
+                />
+                <div class="skill-text">
+                  <p class="skill">HTML</p>
+                  <p class="skill-lvl">Advanced</p>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skill-info">
+                <img
+                  src="images/skills/css.png"
+                  alt="CSS icon"
+                  class="skill-icon"
+                />
+                <div class="skill-text">
+                  <p class="skill">CSS</p>
+                  <p class="skill-lvl">Advanced</p>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skill-info">
+                <img
+                  src="images/skills/sass.png"
+                  alt="SaaS icon"
+                  class="skill-icon"
+                />
+                <div class="skill-text">
+                  <p class="skill">Sass</p>
+                  <p class="skill-lvl">Advanced</p>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skill-info">
+                <img
+                  src="images/skills/js.png"
+                  alt="JS icon"
+                  class="skill-icon"
+                />
+                <div class="skill-text">
+                  <p class="skill">JS</p>
+                  <p class="skill-lvl">Intermediate</p>
+                </div>
+                <div class="stars">★★★★☆</div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skill-info">
+                <img
+                  src="images/skills/react.png"
+                  alt="React icon"
+                  class="skill-icon"
+                />
+                <div class="skill-text">
+                  <p class="skill">React</p>
+                  <p class="skill-lvl">Basic</p>
+                </div>
+                <div class="stars">★★★☆☆</div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skill-info">
+                <img
+                  src="images/skills/git.png"
+                  alt="Git icon"
+                  class="skill-icon"
+                />
+                <div class="skill-text">
+                  <p class="skill">Git</p>
+                  <p class="skill-lvl">Intermediate</p>
+                </div>
+                <div class="stars">★★★★☆</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lang__container">
+          <h2 class="languages-title">Languages</h2>
+          <ul class="language-list">
+            <li class="language-item">
+              <div class="language-info">
+                <img
+                  src="images/flags/uk.png"
+                  alt="English Flag"
+                  class="flag-icon"
+                />
+                <div class="language-text">
+                  <p class="language">English</p>
+                  <p class="lang-lvl">Fluent</p>
+                </div>
+              </div>
+              <div class="proficiency-bar">
+                <div class="proficiency-level" style="width: 100%"></div>
+              </div>
+            </li>
+            <li class="language-item">
+              <div class="language-info">
+                <img
+                  src="images/flags/ru.png"
+                  alt="Russian Flag"
+                  class="flag-icon"
+                />
+                <div class="language-text">
+                  <p class="language">Russian</p>
+                  <p class="lang-lvl">Fluent</p>
+                </div>
+              </div>
+              <div class="proficiency-bar">
+                <div class="proficiency-level" style="width: 100%"></div>
+              </div>
+            </li>
+            <li class="language-item">
+              <div class="language-info">
+                <img
+                  src="images/flags/nl.png"
+                  alt="Dutch Flag"
+                  class="flag-icon"
+                />
+                <div class="language-text">
+                  <p class="language">Dutch</p>
+                  <p class="lang-lvl">Intermediary</p>
+                </div>
+              </div>
+              <div class="proficiency-bar">
+                <div class="proficiency-level" style="width: 75%"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="achievements__container">
+          <h2 class="achievements-title">Achievements</h2>
+          <ul class="achievements-list">
+            <li class="achievements-item">
+              <div class="achievement-icon">
+                <img src="images/achievements/aws.png" alt="AWS icon" />
+              </div>
+              <div class="achievement-info">
+                <p class="achievement">AWS Cloud Quest: Cloud Practitioner</p>
+                <p class="achievement-date">May 2024</p>
+              </div>
+            </li>
+            <li class="achievements-item">
+              <div class="achievement-icon">
+                <img src="images/achievements/aws.png" alt="AWS icon" />
+              </div>
+              <div class="achievement-info">
+                <p class="achievement">AWS Well-Architected Proficient</p>
+                <p class="achievement-date">May 2024</p>
+              </div>
+            </li>
+            <li class="achievements-item">
+              <div class="achievement-icon">
+                <img
+                  src="images/achievements/cantrill.png"
+                  alt="Cantrill icon"
+                />
+              </div>
+              <div class="achievement-info">
+                <p class="achievement">Cantrill Tech Fundamentals</p>
+                <p class="achievement-date">April 2024</p>
+              </div>
+            </li>
+            <li class="achievements-item">
+              <div class="achievement-icon">
+                <img
+                  src="images/achievements/htmlacademy.png"
+                  alt="HTML Academy icon"
+                />
+              </div>
+              <div class="achievement-info">
+                <p class="achievement">HTML Academy Beginners Course</p>
+                <p class="achievement-date">June 2023</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2 class="projects-title">Projects</h2>
+        <div class="projects-slider">
+          <ul class="projects-list">
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/JS-Audio-Player/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/audio.jpg"
+                    alt="Audio player preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Audio Player</h3>
+                    <p class="project-info">Type: App</p>
+                    <p class="project-info">Technologies: HTML, CSS, JS</p>
+                    <p class="project-info">Duration: 7 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/christmas-shop/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/christmas.jpg"
+                    alt="Christmas shop website preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Christmas Shop</h3>
+                    <p class="project-info">Type: Website</p>
+                    <p class="project-info">Technologies: HTML, CSS, JS</p>
+                    <p class="project-info">Duration: 14 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/simon-says/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/simon.jpg"
+                    alt="Simon says game preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Simon Says</h3>
+                    <p class="project-info">Type: JS Game</p>
+                    <p class="project-info">Technologies: SCSS, JS, Webpack</p>
+                    <p class="project-info">Duration: 10 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/Shelter/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/shelter.jpg"
+                    alt="Shelter website preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Shelter</h3>
+                    <p class="project-info">Type: Website</p>
+                    <p class="project-info">Technologies: HTML, CSS, JS</p>
+                    <p class="project-info">Duration: 14 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/Pirate-Game/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/pirates.jpg"
+                    alt="Pirates game preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Pirates of RS School</h3>
+                    <p class="project-info">Type: Canvas game</p>
+                    <p class="project-info">Technologies: HTML, CSS, JS</p>
+                    <p class="project-info">Duration: 10 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/nonograms/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/nonograms.jpg"
+                    alt="Pirates game preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Nonograms game</h3>
+                    <p class="project-info">Type: JS game</p>
+                    <p class="project-info">Technologies: SCSS, JS, Webpack</p>
+                    <p class="project-info">Duration: 14 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/great-keksby/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/keksby.jpg"
+                    alt="Keksby website preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Keksby Shop</h3>
+                    <p class="project-info">Type: Website</p>
+                    <p class="project-info">Technologies: HTML, CSS</p>
+                    <p class="project-info">Duration: 4 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/yacht-club/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/yacht.jpg"
+                    alt="Yacht club website preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Yacht club</h3>
+                    <p class="project-info">Type: Website</p>
+                    <p class="project-info">Technologies: HTML, CSS, JS</p>
+                    <p class="project-info">Duration: 10 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/memory-game/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/memory.jpg"
+                    alt="Memory game preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Memory Game</h3>
+                    <p class="project-info">Type: JS game</p>
+                    <p class="project-info">
+                      Technologies: HTML, CSS, JS, React
+                    </p>
+                    <p class="project-info">Duration: 12 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/Image-Gallery/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/gallery.jpg"
+                    alt="Image gallery preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Image Gallery</h3>
+                    <p class="project-info">Type: App</p>
+                    <p class="project-info">Technologies: HTML, CSS, JS</p>
+                    <p class="project-info">Duration: 7 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://petruse4ka.github.io/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/kvas.jpg"
+                    alt="Kvass website preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Kvast Kvass</h3>
+                    <p class="project-info">Type: Website</p>
+                    <p class="project-info">Technologies: HTML, CSS</p>
+                    <p class="project-info">Duration: 4 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="slider-controls">
+          <button class="scroll-left">←</button>
+          <button class="scroll-right">→</button>
+        </div>
+      </section>
+      <section class="code-example" id="code-example">
+        <h2 class="code-title">Code Examples</h2>
+        <ul class="code-list">
+          <li class="code-item">
+            <button class="spoiler-title active">
+              <div class="button-text">
+                Return the time given the angle of the hour-hand
+              </div>
+              <div class="button-icon__container">
+                <img class="button-icon" src="images/arrow.png" />
+              </div>
+            </button>
+            <pre class="code-snippet active">
             <code class="code">
 <span class="keyword">var</span> <span class="variable">whatTimeIsIt</span> <span class="operator">=</span> <span class="keyword">function</span><span class="parenthesis">(</span><span class="parameter">angle</span><span class="parenthesis">)</span> <span class="brace">{</span>
   <span class="keyword">const</span> <span class="variable">totalMinutes</span> <span class="operator">=</span> <span class="function">Math.floor</span><span class="parenthesis">(</span><span class="parameter">angle</span> <span class="operator">*</span> <span class="number">2</span><span class="parenthesis">)</span><span class="semicolon">;</span>
@@ -366,15 +715,21 @@
 <span class="brace">}</span>
             </code>
           </pre>
-        </li>
-        <li class="code-item">
-          <button class="spoiler-title">
-            <div class="button-text">Is a number prime?</div>
-            <div class="button-icon__container">
-              <img class="button-icon" src="images/arrow.png" alt="Arrow image" width="25px" width="10px">
-            </div>            
-          </button>
-          <pre class="code-snippet">
+          </li>
+          <li class="code-item">
+            <button class="spoiler-title">
+              <div class="button-text">Is a number prime?</div>
+              <div class="button-icon__container">
+                <img
+                  class="button-icon"
+                  src="images/arrow.png"
+                  alt="Arrow image"
+                  width="25px"
+                  width="10px"
+                />
+              </div>
+            </button>
+            <pre class="code-snippet">
             <code class="code">    
 <span class="keyword">function</span> <span class="variable">isPrime</span><span class="parenthesis">(</span><span class="parameter">num</span><span class="parenthesis">)</span> <span class="brace">{</span>
   <span class="keyword">if</span> <span class="parenthesis">(</span><span class="parameter">num</span> <span class="operator">&lt;=</span> <span class="number">1</span><span class="parenthesis">)</span> <span class="brace">{</span>
@@ -395,15 +750,23 @@
 <span class="brace">}</span><span class="semicolon">;</span>
             </code>
           </pre>
-        </li>
-        <li class="code-item">
-          <button class="spoiler-title">
-            <div class="button-text">Return the number of bits given integer as input</div>
-            <div class="button-icon__container">
-              <img class="button-icon" src="images/arrow.png" alt="Arrow image" width="25px" width="10px">
-            </div>
-          </button>
-          <pre class="code-snippet">
+          </li>
+          <li class="code-item">
+            <button class="spoiler-title">
+              <div class="button-text">
+                Return the number of bits given integer as input
+              </div>
+              <div class="button-icon__container">
+                <img
+                  class="button-icon"
+                  src="images/arrow.png"
+                  alt="Arrow image"
+                  width="25px"
+                  width="10px"
+                />
+              </div>
+            </button>
+            <pre class="code-snippet">
             <code class="code">
 <span class="keyword">var</span> <span class="variable">countBits</span> <span class="operator">=</span> <span class="keyword">function</span><span class="parenthesis">(</span><span class="parameter">n</span><span class="parenthesis">)</span> <span class="brace">{</span>
   <span class="keyword">let</span> <span class="variable">binary</span> <span class="operator">=</span> <span class="parameter">n</span><span class="dot">.</span><span class="method">toString</span><span class="parenthesis">(</span><span class="number">2</span><span class="parenthesis">)</span><span class="semicolon">;</span>
@@ -412,15 +775,23 @@
 <span class="brace">}</span><span class="semicolon">;</span>
             </code>
           </pre>
-        </li>
-        <li class="code-item">
-          <button class="spoiler-title">
-            <div class="button-text">Split the string into pairs of two characters</div>
-            <div class="button-icon__container">
-              <img class="button-icon" src="images/arrow.png" alt="Arrow image" width="25px" width="10px">
-            </div>
-          </button>
-          <pre class="code-snippet">
+          </li>
+          <li class="code-item">
+            <button class="spoiler-title">
+              <div class="button-text">
+                Split the string into pairs of two characters
+              </div>
+              <div class="button-icon__container">
+                <img
+                  class="button-icon"
+                  src="images/arrow.png"
+                  alt="Arrow image"
+                  width="25px"
+                  width="10px"
+                />
+              </div>
+            </button>
+            <pre class="code-snippet">
             <code class="code">
 <span class="keyword">function</span> <span class="variable">solution</span><span class="parenthesis">(</span><span class="parameter">str</span><span class="parenthesis">)</span> <span class="brace">{</span>
   <span class="keyword">let</span> <span class="variable">word</span> <span class="operator">=</span> <span class="parameter">str</span><span class="semicolon">;</span>
@@ -435,15 +806,21 @@
 <span class="brace">}</span>
             </code>
           </pre>
-        </li>
-        <li class="code-item">
-          <button class="spoiler-title">
-            <div class="button-text">Reverse a stream of received data</div>
-            <div class="button-icon__container">
-              <img class="button-icon" src="images/arrow.png" alt="Arrow image" width="25px" width="10px">
-            </div>
-          </button>
-          <pre class="code-snippet">
+          </li>
+          <li class="code-item">
+            <button class="spoiler-title">
+              <div class="button-text">Reverse a stream of received data</div>
+              <div class="button-icon__container">
+                <img
+                  class="button-icon"
+                  src="images/arrow.png"
+                  alt="Arrow image"
+                  width="25px"
+                  width="10px"
+                />
+              </div>
+            </button>
+            <pre class="code-snippet">
             <code class="code">
 <span class="keyword">function</span> <span class="variable">dataReverse</span><span class="parenthesis">(</span><span class="parameter">data</span><span class="parenthesis">)</span> <span class="brace">{</span>
   <span class="keyword">let</span> <span class="variable">result</span> <span class="operator">=</span> <span class="bracket">[</span><span class="bracket">]</span><span class="semicolon">;</span>
@@ -454,56 +831,100 @@
 <span class="brace">}</span>
             </code>
           </pre>
-        </li>
-      </ul>
-    </section>
-    <section class="contacts" id="contacts">
-      <h2 class="contacts-title">Contacts</h2>
-      <ul class="contacts-list">
-        <li class="contacts-item">
-          <a class="contact-card" href="https://www.linkedin.com/in/petrovkonstantin/" target="_blank">
-            <img src="images/contacts/linkedin.png" alt="LinkedIn logo" class="contact-logo" width="96" height="96">
-            <div class="contact-info">
-              <span class="contact-alias">Konstantin Petrov</span>
-              <p class="contact-source">LinkedIn</p>
-            </div>
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a class="contact-card" href="https://github.com/petruse4ka" target="_blank">
-            <img src="images/contacts/github.png" alt="GitHub logo" class="contact-logo" width="96" height="96">
-            <div class="contact-info">
-              <span class="contact-alias">Petruse4ka</span>
-              <p class="contact-source">Github</p>
-            </div>
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a class="contact-card" href="mailto:karlson8.9@hotmail.com">
-            <img src="images/contacts/email.png" alt="Email logo" class="contact-logo" width="96" height="96">
-            <div class="contact-info">
-              <span class="contact-alias">karlson8.9@hotmail.com</span>
-              <p class="contact-source">E-Mail</p>
-            </div>
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a class="contact-card" href="https://discordapp.com/users/448093026095595530" target="_blank">
-            <img src="images/contacts/discord.png" alt="Discord logo" class="contact-logo" width="96" height="96">
-            <div class="contact-info">
-              <span class="contact-alias">Petrusja#6082</span>
-              <p class="contact-source">Discord</p>
-            </div>
-          </a>
-        </li>
-      </ul>
-  </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__container">
-      <p class="copyright">Copyright &copy; 2024 <a class="footer-link" href="https://github.com/petruse4ka" target="_blank">petruse4ka</a></p>
-    </div>
-  </footer>
-  <script type="module" src="js/main.js"></script>
-</body>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts" id="contacts">
+        <h2 class="contacts-title">Contacts</h2>
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <a
+              class="contact-card"
+              href="https://www.linkedin.com/in/petrovkonstantin/"
+              target="_blank"
+            >
+              <img
+                src="images/contacts/linkedin.png"
+                alt="LinkedIn logo"
+                class="contact-logo"
+                width="96"
+                height="96"
+              />
+              <div class="contact-info">
+                <span class="contact-alias">Konstantin Petrov</span>
+                <p class="contact-source">LinkedIn</p>
+              </div>
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a
+              class="contact-card"
+              href="https://github.com/petruse4ka"
+              target="_blank"
+            >
+              <img
+                src="images/contacts/github.png"
+                alt="GitHub logo"
+                class="contact-logo"
+                width="96"
+                height="96"
+              />
+              <div class="contact-info">
+                <span class="contact-alias">Petruse4ka</span>
+                <p class="contact-source">Github</p>
+              </div>
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a class="contact-card" href="mailto:karlson8.9@hotmail.com">
+              <img
+                src="images/contacts/email.png"
+                alt="Email logo"
+                class="contact-logo"
+                width="96"
+                height="96"
+              />
+              <div class="contact-info">
+                <span class="contact-alias">karlson8.9@hotmail.com</span>
+                <p class="contact-source">E-Mail</p>
+              </div>
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a
+              class="contact-card"
+              href="https://discordapp.com/users/448093026095595530"
+              target="_blank"
+            >
+              <img
+                src="images/contacts/discord.png"
+                alt="Discord logo"
+                class="contact-logo"
+                width="96"
+                height="96"
+              />
+              <div class="contact-info">
+                <span class="contact-alias">Petrusja#6082</span>
+                <p class="contact-source">Discord</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="copyright">
+          Copyright &copy; 2024
+          <a
+            class="footer-link"
+            href="https://github.com/petruse4ka"
+            target="_blank"
+            >petruse4ka</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
