@@ -15,18 +15,21 @@ function updateItemWidth() {
 
 function updateButtonStates() {
   scrollLeftButton.classList.toggle('disabled', currentIndex === 0);
-  scrollRightButton.classList.toggle('disabled', currentIndex >= sliderItems.length - 2);
+  scrollRightButton.classList.toggle(
+    'disabled',
+    currentIndex >= sliderItems.length - 2
+  );
 }
 
 scrollLeftButton.addEventListener('click', () => {
   currentIndex--;
-  slider.scrollLeft = currentIndex * (itemWidth);
+  slider.scrollLeft = currentIndex * itemWidth;
   updateButtonStates();
 });
 
 scrollRightButton.addEventListener('click', () => {
   currentIndex++;
-  slider.scrollLeft = currentIndex * (itemWidth);
+  slider.scrollLeft = currentIndex * itemWidth;
   updateButtonStates();
 });
 
@@ -40,9 +43,27 @@ updateButtonStates();
 
 const spoilers = document.querySelectorAll('.spoiler-title');
 
-spoilers.forEach(spoiler => {
+spoilers.forEach((spoiler) => {
   spoiler.addEventListener('click', () => {
     spoiler.classList.toggle('active');
     spoiler.nextElementSibling.classList.toggle('active');
+  });
+});
+
+/* Experience Details */
+
+document.querySelectorAll('.details-toggle').forEach((button) => {
+  button.addEventListener('click', () => {
+    const wrapper = button.closest('.details-wrapper');
+    const responsibilities = wrapper.querySelector('.responsibilities');
+    const toggleText = button.querySelector('.toggle-text');
+
+    button.classList.toggle('active');
+    responsibilities.classList.toggle('active');
+
+    // Update text content
+    toggleText.textContent = button.classList.contains('active')
+      ? 'Hide details'
+      : 'Show details';
   });
 });
