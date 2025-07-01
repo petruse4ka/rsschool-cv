@@ -693,27 +693,45 @@ h2 {
 
 .scroll-left,
 .scroll-right {
-  background: #6f42c1;
+  background: transparent;
   border: none;
   color: #ffffff;
   font-size: 2rem;
   cursor: pointer;
   margin-top: 20px;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
-.scroll-left:hover,
-.scroll-right:hover {
-  background: #ff6ec7;
+.scroll-left::before,
+.scroll-right::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(45deg, #6f42c1, #ff6ec7);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.scroll-left:hover::before,
+.scroll-right:hover::before {
+  background: linear-gradient(45deg, #ff6ec7, #6f42c1);
 }
 
 .scroll-left.disabled,
 .scroll-right.disabled {
-  background-color: #dddddd;
   pointer-events: none;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .contacts {
@@ -1063,24 +1081,6 @@ h2 {
   }
 }
 
-.toggle-details {
-  background: linear-gradient(90deg, #6f42c1, #ff6ec7);
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 0.9rem;
-  margin: 10px 0;
-  transition: all 0.3s ease;
-  width: 120px;
-}
-
-.toggle-details:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(111, 66, 193, 0.3);
-}
-
 .hidden {
   display: none;
 }
@@ -1102,7 +1102,7 @@ h2 {
   color: #ffffff;
   padding: 12px 20px;
   margin: 15px 0;
-  border-radius: 25px;
+  border-radius: 10px;
   font-size: 0.95rem;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -1118,7 +1118,7 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 2px;
   background: linear-gradient(45deg, #6f42c1, #ff6ec7);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -1525,7 +1525,7 @@ h2 {
   }
 
   .scroll-left,
-.scroll-right {
-  padding: 10px;
-}
+  .scroll-right {
+    padding: 10px;
+  }
 }
