@@ -1462,3 +1462,30 @@ h2 {
     display: flex;
   }
 }
+
+@media (max-width: 768px) {
+  .about-me {
+    padding: 40px 0;
+  }
+  
+  .about-me__container {
+    width: 90%;
+    gap: 25px;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .photo {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .about-me__text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
