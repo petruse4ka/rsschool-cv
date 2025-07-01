@@ -67,3 +67,48 @@ document.querySelectorAll('.details-toggle').forEach((button) => {
       : 'Show details';
   });
 });
+
+/* Burger Menu */
+
+const burgerMenu = document.querySelector('.burger-menu');
+const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+
+function openMobileMenu() {
+  burgerMenu.classList.toggle('active');
+  mobileMenuOverlay.classList.toggle('active');
+  document.body.classList.toggle('menu-open');
+}
+
+function closeMobileMenu() {
+  burgerMenu.classList.remove('active');
+  mobileMenuOverlay.classList.remove('active');
+  document.body.classList.remove('menu-open');
+}
+
+burgerMenu.addEventListener('click', openMobileMenu);
+
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener('click', closeMobileMenu);
+});
+
+mobileMenuOverlay.addEventListener('click', (e) => {
+  if (e.target === mobileMenuOverlay) {
+    closeMobileMenu();
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+    closeMobileMenu();
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (
+    window.innerWidth > 1280 &&
+    mobileMenuOverlay.classList.contains('active')
+  ) {
+    closeMobileMenu();
+  }
+});
