@@ -398,7 +398,6 @@ h2 {
 }
 
 .skills-item:hover .stars {
-  transform: scale(1.1);
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
 
@@ -1037,13 +1036,11 @@ h2 {
 }
 
 .experience-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .experience-card:hover .logo-container {
   background: rgba(255, 255, 255, 0.1);
-  transform: scale(1.05);
 }
 
 .experience-card:hover .company-logo {
@@ -1217,7 +1214,7 @@ h2 {
 }
 
 .details-toggle {
-  background: linear-gradient(135deg, #6f42c1, #ff6ec7);
+  background: transparent;
   border: none;
   cursor: pointer;
   display: flex;
@@ -1230,10 +1227,9 @@ h2 {
   border-radius: 25px;
   font-size: 0.95rem;
   font-weight: 500;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(111, 66, 193, 0.3);
   min-width: 140px;
 }
 
@@ -1241,58 +1237,47 @@ h2 {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  transition: left 0.6s ease;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  padding: 2px;
+  background: linear-gradient(45deg, #6f42c1, #ff6ec7);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
-.details-toggle:hover {
-  background: linear-gradient(135deg, #ff6ec7, #6f42c1);
-}
-
-.details-toggle:hover::before {
-  left: 100%;
-}
-
-.details-toggle:active {
-  transform: translateY(-1px) scale(1.02);
+.details-toggle:hover::before,
+.details-toggle.active:hover::before {
+  background: linear-gradient(45deg, #ff6ec7, #6f42c1);
 }
 
 .toggle-icon {
   font-size: 20px;
   font-weight: bold;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s ease;
   display: inline-block;
   line-height: 1;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  position: relative;
 }
 
 .toggle-text {
   font-size: 0.95rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.5px;
-}
-
-.details-toggle.active {
-  background: linear-gradient(135deg, #ff6ec7, #6f42c1);
+  z-index: 2;
+  position: relative;
 }
 
 .details-toggle.active .toggle-icon {
-  transform: rotate(45deg) scale(1.1);
-  color: #ffffff;
+  transform: rotate(45deg);
 }
 
 .details-toggle.active .toggle-text {
-  color: #ffffff;
   font-weight: 600;
 }
 
