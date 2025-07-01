@@ -402,6 +402,7 @@ h2 {
   font-size: 1.1rem;
   font-weight: 500;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  line-height: 1.5;
 }
 
 .skill-lvl,
@@ -806,41 +807,6 @@ h2 {
   color: #dddddd;
 }
 
-/* footer */
-
-.footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #2b3035;
-  padding: 40px 0;
-  margin: 0;
-}
-
-.footer__container {
-  width: 90%;
-  max-width: 1920px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.copyright {
-  margin: 0;
-  padding: 0;
-  color: #dddddd;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: #1f51ff;
-  transition: all 0.3s ease-in-out;
-}
-
-.footer-link:hover {
-  color: #ff6ec7;
-}
-
 .language-info {
   display: flex;
   align-items: center;
@@ -1192,6 +1158,41 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* footer */
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #2b3035;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.footer__container {
+  width: 90%;
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+  color: #dddddd;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #1f51ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #ff6ec7;
+}
+
 /* Burger Menu */
 .burger-menu {
   display: none;
@@ -1346,6 +1347,12 @@ h2 {
   .experience-container {
     grid-template-columns: 1fr;
   }
+
+  .skills-lang-achievements {
+    padding-top: 20px;
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1447,6 +1454,39 @@ h2 {
   }
   
   .details-toggle {
+    margin: 0 auto;
+  }
+
+  .skills__container,
+  .lang__container,
+  .achievements__container {
+    padding: 20px;
+  }
+  
+  .skills-title,
+  .languages-title,
+  .achievements-title {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+    
+  .skill,
+  .language,
+  .achievement {
+    font-size: 1rem;
+  }
+  
+  .skill-lvl,
+  .lang-lvl,
+  .achievement-date {
+    font-size: 0.85rem;
+  }
+  
+  .stars {
+    justify-self: center;
+  }
+  
+  .proficiency-bar {
     margin: 0 auto;
   }
 }
