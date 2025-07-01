@@ -646,7 +646,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(111, 66, 193, 0.7);
+  background: rgba(43, 48, 53, 0.7);
   transform: rotate(45deg);
   transform-origin: center;
   z-index: -1;
@@ -654,7 +654,8 @@ h2 {
 }
 
 .projects-item:hover .project-details::after {
-  background: rgba(43, 48, 53, 0.7);
+  background: rgba(111, 66, 193, 0.7);
+  transform: rotate(0deg) scale(1.1);
 }
 
 .projects-item:hover .project-img {
@@ -673,6 +674,14 @@ h2 {
   line-height: 1.5rem;
   margin: 0;
   text-align: center;
+  opacity: 0;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.projects-item:hover .project-info {
+  opacity: 1;
+  display: block;
 }
 
 .slider-controls {
@@ -1353,41 +1362,45 @@ h2 {
     grid-template-columns: 1fr;
     gap: 100px;
   }
+
+  .projects-item {
+    min-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   .about-me {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
-  
+
   .about-me__container {
     gap: 25px;
   }
-  
+
   .page-title {
     font-size: 2rem;
     line-height: 2.5rem;
     margin-bottom: 15px;
   }
-  
+
   .photo {
     width: 200px;
     height: 200px;
   }
-  
+
   .about-me__text {
     font-size: 0.95rem;
     line-height: 1.6;
   }
-  
+
   .experience {
     padding: 15px 0;
   }
-  
+
   .experience-container {
     gap: 30px;
   }
-  
+
   .experience-title {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -1396,12 +1409,12 @@ h2 {
   .card-header {
     grid-template-columns: 1fr;
   }
-  
+
   .column-title {
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
-  
+
   .experience-cards {
     gap: 0;
   }
@@ -1410,38 +1423,38 @@ h2 {
     padding: 15px;
     text-align: center;
   }
-  
+
   .card-header {
     justify-items: center;
     text-align: center;
   }
-  
+
   .logo-container {
     justify-self: center;
   }
-  
+
   .position-info {
     text-align: center;
   }
-  
+
   .position-info h4 {
     font-size: 1.1rem;
     text-align: center;
   }
-  
+
   .company,
   .location {
     font-size: 0.9rem;
     text-align: center;
   }
-  
+
   .date {
     max-width: 100px;
     font-size: 0.85rem;
     text-align: center;
     justify-self: center;
   }
-  
+
   .details-wrapper {
     display: flex;
     flex-direction: column;
@@ -1452,9 +1465,13 @@ h2 {
   .responsibilities li::before {
     content: '';
   }
-  
+
   .details-toggle {
     margin: 0 auto;
+  }
+
+  .skills-lang-achievements {
+    gap: 70px;
   }
 
   .skills__container,
@@ -1462,31 +1479,53 @@ h2 {
   .achievements__container {
     padding: 20px;
   }
-  
+
   .skills-title,
   .languages-title,
   .achievements-title {
     font-size: 1.5rem;
     margin-bottom: 0;
   }
-    
+
   .skill,
   .language,
   .achievement {
     font-size: 1rem;
   }
-  
+
   .skill-lvl,
   .lang-lvl,
   .achievement-date {
     font-size: 0.85rem;
   }
-  
+
   .stars {
     justify-self: center;
   }
-  
+
   .proficiency-bar {
     margin: 0 auto;
   }
+
+  .projects-title,
+  .code-title,
+  .contacts-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .projects-item:hover .project-info {
+    opacity: 0;
+    display: none;
+  }
+
+  .scroll-left,
+.scroll-right {
+  padding: 10px;
+}
 }
