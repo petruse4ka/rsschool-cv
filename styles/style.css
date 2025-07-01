@@ -162,105 +162,20 @@ body.menu-open {
   color: #dddddd;
 }
 
-.main-section {
-  display: flex;
-}
-
 h2 {
   font-size: 28px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
 
-.left-side-main {
-  width: 400px;
-  background-color: #abcef8;
-}
-
-.education,
-.skills,
-.lang,
-.achiev {
+.education {
   border-top: 1px solid #ffffff;
   padding-left: 30px;
   padding-bottom: 25px;
 }
 
-.education-list,
-.skill-list,
-.lang-list,
-.achiev-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.contact-id,
-.edu-course,
-.skill,
-.language,
-.achievement {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 10px;
-}
-
-.edu-details,
-.skill-lvl,
-.lang-lvl,
-.achiev-date {
-  font-size: 12px;
-  font-style: italic;
-  line-height: 18px;
-}
-
-.education-item,
-.skills-item,
-.lang-item,
-.achiev-item {
-  padding-bottom: 10px;
-}
-
-.right-side-main {
-  width: 700px;
-  padding: 0 45px;
-  border-right: 1px solid #abcef8;
-}
-
 .work {
   border-bottom: 1px solid #abcef8;
-}
-
-.work-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.position {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 10px;
-}
-
-.position-flex {
-  display: flex;
-}
-
-.position-details {
-  font-size: 12px;
-  font-style: italic;
-  line-height: 18px;
-  margin: 0;
-  margin-right: 30px;
-  margin-bottom: 10px;
-  padding: 0;
-}
-
-.position-duty-list {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
 }
 
 .skills-lang-achievements {
