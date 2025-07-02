@@ -522,6 +522,8 @@ h2 {
 
 .projects-item {
   min-width: 50%;
+  width: 50%;
+  flex-shrink: 0;
   position: relative;
 }
 
@@ -1263,8 +1265,9 @@ h2 {
 
   .projects-item {
     min-width: 100%;
+    width: 100%;
   }
-  
+
   .contacts-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -1431,7 +1434,7 @@ h2 {
   .scroll-right {
     padding: 10px;
   }
-  
+
   .contacts-list {
     grid-template-columns: 1fr;
     gap: 20px;

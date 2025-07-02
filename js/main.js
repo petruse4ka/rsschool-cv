@@ -6,37 +6,63 @@ const scrollLeftButton = document.querySelector('.scroll-left');
 const scrollRightButton = document.querySelector('.scroll-right');
 
 let currentIndex = 0;
-let itemWidth = sliderItems[0].offsetWidth;
+let itemWidth = 0;
 
 function updateItemWidth() {
-  itemWidth = sliderItems[0].offsetWidth;
-  slider.scrollLeft = currentIndex * itemWidth;
+  if (sliderItems.length > 0) {
+    const rect = sliderItems[0].getBoundingClientRect();
+    itemWidth = rect.width;
+    slider.scrollLeft = currentIndex * itemWidth;
+  }
 }
 
 function updateButtonStates() {
-  scrollLeftButton.classList.toggle('disabled', currentIndex === 0);
-  scrollRightButton.classList.toggle(
-    'disabled',
-    currentIndex >= sliderItems.length - 2
-  );
+  if (scrollLeftButton && scrollRightButton) {
+    const isMobile = window.innerWidth <= 1280;
+    const maxIndex = isMobile ? sliderItems.length - 1 : sliderItems.length - 2;
+    
+    if (currentIndex > maxIndex) {
+      currentIndex = maxIndex;
+      slider.scrollLeft = currentIndex * itemWidth;
+    }
+    
+    scrollLeftButton.classList.toggle('disabled', currentIndex === 0);
+    scrollRightButton.classList.toggle('disabled', currentIndex >= maxIndex);
+  }
+}
+
+function scrollToIndex(index) {
+  const isMobile = window.innerWidth <= 1280;
+  const maxIndex = isMobile ? sliderItems.length - 1 : sliderItems.length - 2;
+
+  currentIndex = Math.max(0, Math.min(index, maxIndex));
+  const scrollPosition = currentIndex * itemWidth;
+  slider.scrollTo({
+    left: scrollPosition,
+    behavior: 'smooth',
+  });
+  updateButtonStates();
 }
 
 scrollLeftButton.addEventListener('click', () => {
-  currentIndex--;
-  slider.scrollLeft = currentIndex * itemWidth;
-  updateButtonStates();
+  scrollToIndex(currentIndex - 1);
 });
 
 scrollRightButton.addEventListener('click', () => {
-  currentIndex++;
-  slider.scrollLeft = currentIndex * itemWidth;
+  scrollToIndex(currentIndex + 1);
+});
+
+window.addEventListener('load', () => {
+  updateItemWidth();
   updateButtonStates();
 });
 
 window.addEventListener('resize', () => {
   updateItemWidth();
+  updateButtonStates();
 });
 
+updateItemWidth();
 updateButtonStates();
 
 /* Code Examples */
