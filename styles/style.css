@@ -221,18 +221,6 @@ h2 {
   mask-composite: exclude;
 }
 
-.skills-title,
-.languages-title,
-.achievements-title {
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #6f42c1, #ff6ec7);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
 .skill-list,
 .language-list,
 .achievements-list {
@@ -664,9 +652,6 @@ h2 {
 .projects-title,
 .contacts-title,
 .code-title,
-.skills-title,
-.languages-title,
-.achievements-title,
 .experience-title {
   font-size: 3rem;
   line-height: 4.5rem;
@@ -1384,13 +1369,6 @@ h2 {
   .lang__container,
   .achievements__container {
     padding: 20px;
-  }
-
-  .skills-title,
-  .languages-title,
-  .achievements-title {
-    font-size: 1.5rem;
-    margin-bottom: 0;
   }
 
   .skill,
