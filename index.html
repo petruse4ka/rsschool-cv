@@ -246,6 +246,24 @@
                     />
                   </div>
                   <div class="position-info">
+                    <h4>React</h4>
+                    <p class="company">RS School</p>
+                    <p class="location">Europe</p>
+                  </div>
+                  <div class="date">2025</div>
+                </div>
+              </div>
+
+              <div class="experience-card">
+                <div class="card-header">
+                  <div class="logo-container">
+                    <img
+                      src="images/education/rss.svg"
+                      alt="RS School logo"
+                      class="company-logo"
+                    />
+                  </div>
+                  <div class="position-info">
                     <h4>JavaScript/Front-End</h4>
                     <p class="company">RS School</p>
                     <p class="location">Europe</p>
@@ -371,9 +389,23 @@
                 />
                 <div class="skill-text">
                   <p class="skill">React</p>
-                  <p class="skill-lvl">Basic</p>
+                  <p class="skill-lvl">Advanced</p>
                 </div>
-                <div class="stars">★★★☆☆</div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="skill-info">
+                <img
+                  src="images/skills/nextjs.png"
+                  alt="React icon"
+                  class="skill-icon"
+                />
+                <div class="skill-text">
+                  <p class="skill">Next.js</p>
+                  <p class="skill-lvl">Intermediate</p>
+                </div>
+                <div class="stars">★★★★★</div>
               </div>
             </li>
             <li class="skills-item">
@@ -652,6 +684,58 @@
             </li>
             <li class="projects-item">
               <a
+                href="https://rss-react-2025-ccq8.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/next-gallery.jpg"
+                    alt="Modern Gallery"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">Modern Gallery</h3>
+                    <p class="project-info">Type: App</p>
+                    <p class="project-info">
+                      Technologies: React, Next.js, Tailwind, RTK, RTK Query, Next-intl, TypeScript,
+                      ESLint, Prettier, Husky,
+                    </p>
+                    <p class="project-info">Duration: 14 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://react2025performance.netlify.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/c02.jpg"
+                    alt="CO2 Emissions"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">CO2 Emissions</h3>
+                    <p class="project-info">Type: App</p>
+                    <p class="project-info">
+                      Technologies: React, Zustand, Tailwind, TypeScript, ESLint,
+                      Prettier, Husky,
+                    </p>
+                    <p class="project-info">Duration: 7 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
                 href="https://petruse4ka.github.io/decision-making-tool/decision-making-tool/#/"
                 target="_blank"
                 class="project-link"
@@ -718,6 +802,29 @@
                     <p class="project-info">Type: Website</p>
                     <p class="project-info">Technologies: HTML, CSS, JS</p>
                     <p class="project-info">Duration: 14 days</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="projects-item">
+              <a
+                href="https://rss-react-2025.vercel.app/"
+                target="_blank"
+                class="project-link"
+              >
+                <div class="project-img__container">
+                  <img
+                    class="project-img"
+                    src="images/projects/forms.jpg"
+                    alt="Form website preview"
+                    width="480"
+                    height="270"
+                  />
+                  <div class="project-details">
+                    <h3 class="project-title">User Management</h3>
+                    <p class="project-info">Type: App</p>
+                    <p class="project-info">Technologies: React, Tailwind, Zod, RTK, TypeScript, ESLint, Prettier, Husky</p>
+                    <p class="project-info">Duration: 7 days</p>
                   </div>
                 </div>
               </a>
@@ -1163,7 +1270,7 @@
     <footer class="footer">
       <div class="footer__container">
         <p class="copyright">
-          Copyright &copy; 2024
+          Copyright &copy; <span id="current-year"></span>
           <a
             class="footer-link"
             href="https://github.com/petruse4ka"
